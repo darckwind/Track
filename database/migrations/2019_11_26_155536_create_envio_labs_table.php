@@ -15,8 +15,8 @@ class CreateEnvioLabsTable extends Migration
     {
         Schema::create('envio_labs', function (Blueprint $table) {
             $table->bigIncrements('id_env_lab');
-            $table->unsignedBigInteger('id_lab');
-            $table->foreign('id_lab')->references('id_lab')->on('laboratorios')->onDelete('cascade');
+            $table->unsignedBigInteger('id_laboratorio');
+            $table->foreign('id_laboratorio')->references('id_laboratorio')->on('laboratorios')->onDelete('cascade');
             $table->unsignedBigInteger('id_item');
             $table->foreign('id_item')->references('id_item')->on('items')->onDelete('cascade');
             $table->integer('cantidad');
