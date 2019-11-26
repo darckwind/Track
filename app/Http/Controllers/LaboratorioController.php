@@ -99,7 +99,7 @@ class LaboratorioController extends Controller
     {
         dd($laboratorio);
         $laboratorio->delete();
-        return redirect()->route('item.index')
+        return redirect()->route('lab.index')
             ->with('success','Laboratorio eliminado');
     }
 }
