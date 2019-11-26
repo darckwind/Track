@@ -30,7 +30,7 @@
         <form action="{{ route('item.store') }}" method="POST">
             @csrf
             <div class="row">
-                <div class="form-group col-md-6">
+                <div class="form-group align-content-center col-md-6">
                     <label for="exampleInputEmail1">Nombre Item</label>
                     <input type="text" class="form-control" name="nombre_item">
                     <small  class="form-text text-muted">en caso de usar una abreviacion, que esta sea facil de identificar</small>

@@ -35,7 +35,15 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
-        die($request);
+        $request->validate([
+            'nombre_item' => 'required',
+        ]);
+
+        $item = new item();
+        $item->description = $request->input('nombre_item');
+        $item->save();
+
+        return redirect()->route('item.create')->with('success','item agregado');
     }
 
     /**
