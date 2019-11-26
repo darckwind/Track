@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class laboratorio extends Model
 {
     protected $fillable = [
-        'id_lab','nombre_lab'
+        'id_laboratorio','nombre_lab'
     ];
-    protected $primaryKey = 'id_lab';
+    protected $primaryKey = 'id_laboratorio';
 }
