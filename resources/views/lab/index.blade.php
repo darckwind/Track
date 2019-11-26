@@ -15,8 +15,8 @@
                     <td>{{$labs->nombre_lab }}</td>
                     <td>{{$labs->created_at}}</td>
                     <td>
-                        <form action="{{ route('lab.destroy',$labs->id_lab) }}" method="POST">
-                            <a class="btn btn-warning" href="{{ route('lab.edit',$labs->id_lab) }}">edit</a>
+                        <form action="{{ route('lab.destroy',$labs->id_laboratorio) }}" method="POST">
+                            <a class="btn btn-warning" href="{{ route('lab.edit',$labs->id_laboratorio) }}">edit</a>
                             <!--selector multiples edicion de datos-->
                             @csrf
                             @method('DELETE')
