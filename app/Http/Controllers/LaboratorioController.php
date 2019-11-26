@@ -82,7 +82,7 @@ class LaboratorioController extends Controller
         $request->validate([
             'nombre_lab' => 'required'
         ]);
-
+        die($laboratorio);
         $laboratorio->nombre_lab = $request->input('nombre_lab');
         $laboratorio->save();
 
