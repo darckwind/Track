@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-12 margin-tb">
                 <div class="pull-left">
-                    <h2>Editando Laboratorio {{$laboratorio->nombre_lab}}</h2>
+                    <h2>Editando Laboratorio {{$lab->nombre_lab}}</h2>
                 </div>
             </div>
         </div>
@@ -27,13 +27,13 @@
             </div>
         @endif
 
-        <form action="{{ route('item.update',$laboratorio->id_laboratorio) }}" method="POST">
+        <form action="{{ route('lab.update',$lab->id_laboratorio) }}" method="POST">
             @csrf
             @method('PUT')
             <div class="row">
                 <div class="form-group align-content-center col-md-6">
                     <label for="exampleInputEmail1">Nombre Laboratorio</label>
-                    <input type="text" class="form-control" name="nombre_item" value="{{$laboratorio->nombre_lab}}">
+                    <input type="text" class="form-control" name="nombre_item" value="{{$lab->nombre_lab}}">
                     <small  class="form-text text-muted">en caso de usar una abreviacion, que esta sea facil de identificar</small>
                 </div>
             </div>

@@ -64,9 +64,10 @@ class LaboratorioController extends Controller
      * @param  \App\laboratorio  $laboratorio
      * @return \Illuminate\Http\Response
      */
-    public function edit(laboratorio $laboratorio)
+    public function edit($laboratorio)
     {
-        return view('lab.edit',compact('laboratorio'));
+        $lab = laboratorio::find($laboratorio);
+        return view('lab.edit',compact('lab'));
     }
 
     /**
