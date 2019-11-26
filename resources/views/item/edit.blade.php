@@ -26,14 +26,14 @@
                 </ul>
             </div>
         @endif
-{{$item}}
+
         <form action="{{ route('item.update',$item->id_item) }}" method="POST">
             @csrf
             @method('PUT')
             <div class="row">
                 <div class="form-group align-content-center col-md-6">
                     <label for="exampleInputEmail1">Nombre Instrumento</label>
-                    <input type="text" class="form-control" name="nombre_item" value="{{$item->descripcion}}">
+                    <input type="text" class="form-control" name="nombre_item" value="{{$item->description}}">
                     <small  class="form-text text-muted">en caso de usar una abreviacion, que esta sea facil de identificar</small>
                 </div>
             </div>
