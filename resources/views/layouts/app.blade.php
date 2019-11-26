@@ -44,11 +44,17 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Laboratorios
+                                Infraestructura
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{route('lab.index')}}">Vista General</a>
+                                <a class="dropdown-item" href="{{route('lab.index')}}">Vista General Laboratorios</a>
                                 <a class="dropdown-item" href="{{route('lab.create')}}">Nuevo Laboratorio </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{route('lab.index')}}">Vista General Sede</a>
+                                <a class="dropdown-item" href="{{route('lab.create')}}">Nuevo Sede </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{route('lab.index')}}">Vista General CEO</a>
+                                <a class="dropdown-item" href="{{route('lab.create')}}">Nuevo CEO </a>
                             </div>
                         </li>
 
