@@ -13,10 +13,16 @@ class CreateEstadosTable extends Migration
      */
     public function up()
     {
+        Schema::create('tipos', function (Blueprint $table) {
+            $table->bigIncrements('id_tipo');
+            $table->string('des_tipo');
+            $table->timestamps();
+        });
         Schema::create('estados', function (Blueprint $table) {
             $table->bigIncrements('id_estado');
             $table->string('descripcion');
-            $table->integer('tipo');
+            $table->unsignedBigInteger('id_tipo');
+            $table->foreign('id_tipo')->references('id_tipo')->on('tipos')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -29,5 +35,6 @@ class CreateEstadosTable extends Migration
     public function down()
     {
         Schema::dropIfExists('estados');
+        Schema::dropIfExists('tipos');
     }
 }

@@ -15,15 +15,14 @@ class CreateCentrosTable extends Migration
     {
         Schema::create('centros', function (Blueprint $table) {
             $table->bigIncrements('id_centro');
-            $table->string('cod_centro');
-            $table->string('region');
-            $table->string('comuna');
-            $table->string('direccion');
-            $table->string('run');
-            $table->foreign('run')->references('run')->on('encargados')->onDelete('cascade');
+            $table->string('nombre_centro');
+            $table->string('direccion_centro');
+            $table->string('region_centro');
+            $table->string('comuna_centro');
+            $table->string('run_enc');
+            $table->foreign('run_enc')->references('run_enc')->on('encargados')->onDelete('cascade');
             $table->unsignedBigInteger('id_estado');
             $table->foreign('id_estado')->references('id_estado')->on('estados')->onDelete('cascade');
-            $table->primary(array('id_centro', 'cod_centro'));
             $table->timestamps();
         });
     }

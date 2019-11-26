@@ -14,16 +14,13 @@ class CreateSedesTable extends Migration
     public function up()
     {
         Schema::create('sedes', function (Blueprint $table) {
-            $table->Increments('id_sede');
-            $table->string('cod_sede');
-            $table->string('direccion');
-            $table->unsignedBigInteger('nombre_lab');
-            $table->foreign('nombre_lab')->references('nombre_lab')->on('laboratorios')->onDelete('cascade');
-            $table->string('run');
-            $table->foreign('run')->references('run')->on('encargados')->onDelete('cascade');
+            $table->bigIncrements('id_sede');
+            $table->string('nombre_sede');
+            $table->string('direccion_sede');
+            $table->string('run_enc');
+            $table->foreign('run_enc')->references('run_enc')->on('encargados')->onDelete('cascade');
             $table->unsignedBigInteger('id_estado');
-            $table->foreign('id_estado')->references('id_estado')->on('estados')->onDelete('cascade')->onUpdate('cascade');
-            $table->primary(array('id_sede', 'cod_sede'));
+            $table->foreign('id_estado')->references('id_estado')->on('estados')->onDelete('cascade');
             $table->timestamps();
         });
     }

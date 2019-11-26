@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLaboratoriosTable extends Migration
+class CreateEnvioLabsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateLaboratoriosTable extends Migration
      */
     public function up()
     {
-        Schema::create('laboratorios', function (Blueprint $table) {
-            $table->bigIncrements('id_lab');
-            $table->string('nombre_lab');
-            $table->string('direccion');
+        Schema::create('envio_labs', function (Blueprint $table) {
+            $table->bigIncrements('id_env_lab');
+            $table->unsignedBigInteger('id_lab');
+            $table->foreign('id_lab')->references('id_lab')->on('laboratorios')->onDelete('cascade');
             $table->unsignedBigInteger('id_item');
             $table->foreign('id_item')->references('id_item')->on('items')->onDelete('cascade');
             $table->integer('cantidad');
-            $table->primary(array('id_lab', 'nombre_lab'));
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ class CreateLaboratoriosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('laboratorios');
+        Schema::dropIfExists('envio_labs');
     }
 }
