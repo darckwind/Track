@@ -18,7 +18,7 @@ class CreateLaboratoriosTable extends Migration
             $table->string('nombre_lab');
             $table->string('direccion');
             $table->unsignedBigInteger('id_item');
-            $table->foreign('id_item')->references('id_item')->on('items')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('id_item')->references('id_item')->on('items')->onDelete('cascade');
             $table->integer('cantidad');
             $table->primary(array('id_lab', 'nombre_lab'));
             $table->timestamps();

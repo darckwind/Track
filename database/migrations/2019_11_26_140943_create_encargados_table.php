@@ -20,7 +20,7 @@ class CreateEncargadosTable extends Migration
             $table->string('telefono');
             $table->string('email');
             $table->unsignedBigInteger('id_tipo');
-            $table->foreign('id_tipo')->references('id_tipo')->on('tipos')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('id_tipo')->references('id_tipo')->on('tipos')->onDelete('cascade');
             $table->primary('run');
             $table->timestamps();
         });
