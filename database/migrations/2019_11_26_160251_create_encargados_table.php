@@ -14,13 +14,14 @@ class CreateEncargadosTable extends Migration
     public function up()
     {
         Schema::create('encargados', function (Blueprint $table) {
-            $table->bigIncrements('run_enc');
+            $table->string('run_enc');
             $table->string('nombre_enc');
             $table->string('apellido_enc');
             $table->string('telefono_enc');
             $table->string('email_enc');
             $table->unsignedBigInteger('id_tipo');
             $table->foreign('id_tipo')->references('id_tipo')->on('tipos')->onDelete('cascade');
+            $table->primary('run_enc');
             $table->timestamps();
         });
     }
