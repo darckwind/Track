@@ -14,7 +14,7 @@ class CreateEncargadosTable extends Migration
     public function up()
     {
         Schema::create('encargados', function (Blueprint $table) {
-            $table->string('run');
+            $table->string('run')->unique();
             $table->string('nombres');
             $table->string('apellidos');
             $table->string('telefono');
