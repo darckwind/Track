@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-12 margin-tb">
                 <div class="pull-left">
-                    <h2>Nuevo Instrumento</h2>
+                    <h2>Nuevo Laboratorio</h2>
                 </div>
             </div>
         </div>
@@ -33,11 +33,6 @@
                 <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Nombre Laboratorio</label>
                     <input type="text" class="form-control" name="nombre_lab">
-                    <small  class="form-text text-muted">en caso de usar una abreviacion, que esta sea facil de identificar</small>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="exampleInputEmail1">Direccion Laboratorio</label>
-                    <input type="text" class="form-control" name="dire_lab">
                     <small  class="form-text text-muted">en caso de usar una abreviacion, que esta sea facil de identificar</small>
                 </div>
             </div>

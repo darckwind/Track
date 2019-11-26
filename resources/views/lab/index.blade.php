@@ -7,14 +7,12 @@
         <table class="table table-responsive-sm">
             <tr>
                 <th>nombre instrumento</th>
-                <th>direccion laboratorio</th>
                 <th>creado</th>
                 <th>Acction</th>
             </tr>
             @foreach($lab as $labs)
                 <tr>
                     <td>{{$labs->nombre_lab }}</td>
-                    <td>{{$labs->direccion_lab}}</td>
                     <td>{{$labs->created_at}}</td>
                     <td>
                         <form action="{{ route('lab.destroy',$labs->id_lab) }}" method="POST">

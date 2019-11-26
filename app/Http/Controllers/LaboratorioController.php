@@ -36,7 +36,15 @@ class LaboratorioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nombre_lab' => 'required'
+        ]);
+
+        $lab = new laboratorio();
+        $lab->nombre_lab = $request->input('nombre_lab');
+        $lab->save();
+
+        return redirect()->route('lab.create')->with('success','Laboratorio Creado');
     }
 
     /**
@@ -58,7 +66,7 @@ class LaboratorioController extends Controller
      */
     public function edit(laboratorio $laboratorio)
     {
-        //
+        return view('lab.edit',compact('laboratorio'));
     }
 
     /**
@@ -70,7 +78,15 @@ class LaboratorioController extends Controller
      */
     public function update(Request $request, laboratorio $laboratorio)
     {
-        //
+        $request->validate([
+            'nombre_lab' => 'required'
+        ]);
+
+        $laboratorio->nombre_lab = $request->input('nombre_lab');
+        $laboratorio->save();
+
+        return redirect()->route('lab.index')
+            ->with('success','Laboratorio actualizado');
     }
 
     /**
@@ -81,6 +97,8 @@ class LaboratorioController extends Controller
      */
     public function destroy(laboratorio $laboratorio)
     {
-        //
+        $laboratorio->delete();
+        return redirect()->route('item.index')
+            ->with('success','Laboratorio eliminado');
     }
 }
