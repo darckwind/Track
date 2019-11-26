@@ -16,7 +16,7 @@ class CreateEnvioSedesTable extends Migration
         Schema::create('envio_sedes', function (Blueprint $table) {
             $table->bigIncrements('id_env_sede');
             $table->unsignedBigInteger('id_laboratorio');
-            $table->foreign('id_laboratorio')->references('id_laboratorios')->on('laboratorios')->onDelete('cascade');
+            $table->foreign('id_laboratorio')->references('id_laboratorio')->on('laboratorios')->onDelete('cascade');
             $table->unsignedBigInteger('id_sede');
             $table->foreign('id_sede')->references('id_sede')->on('sedes')->onDelete('cascade');
             $table->timestamps();
