@@ -97,7 +97,7 @@ class LaboratorioController extends Controller
      */
     public function destroy(laboratorio $laboratorio)
     {
-        dd($laboratorio);
+        die($laboratorio);
         $laboratorio->delete();
         return redirect()->route('lab.index')
             ->with('success','Laboratorio eliminado');
