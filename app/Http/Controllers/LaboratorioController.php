@@ -95,10 +95,10 @@ class LaboratorioController extends Controller
      * @param  \App\laboratorio  $laboratorio
      * @return \Illuminate\Http\Response
      */
-    public function destroy(laboratorio $laboratorio)
+    public function destroy($laboratorio)
     {
-        die($laboratorio);
-        $laboratorio->delete();
+        $lab = $laboratorio::find($laboratorio);
+        $lab->delete();
         return redirect()->route('lab.index')
             ->with('success','Laboratorio eliminado');
     }
