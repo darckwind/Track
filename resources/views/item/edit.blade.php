@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-12 margin-tb">
                 <div class="pull-left">
-                    <h2>Add new Bike Model</h2>
+                    <h2>Editando instrumento {{$item->description}}</h2>
                 </div>
             </div>
         </div>
