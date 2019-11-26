@@ -3,7 +3,7 @@
 @section('content')
 
 	<div class="container">
-		holi
+		{{item}}
 	</div>
 
 @endsection
