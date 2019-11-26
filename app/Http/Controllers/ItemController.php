@@ -66,7 +66,7 @@ class ItemController extends Controller
      */
     public function edit(item $item)
     {
-        //
+        die($item);
     }
 
     /**
@@ -89,6 +89,8 @@ class ItemController extends Controller
      */
     public function destroy(item $item)
     {
-        //
+        $item->delete();
+        return redirect()->route('item.index')
+            ->with('success','Instrumento eliminado');
     }
 }
