@@ -77,14 +77,16 @@ class LaboratorioController extends Controller
      * @param  \App\laboratorio  $laboratorio
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, laboratorio $laboratorio)
+    public function update(Request $request, $laboratorio)
     {
         $request->validate([
             'nombre_lab' => 'required'
         ]);
-        die($laboratorio);
-        $laboratorio->nombre_lab = $request->input('nombre_lab');
-        $laboratorio->save();
+
+
+        $lab = laboratorio::find($laboratorio);
+        $lab->nombre_lab = $request->input('nombre_lab');
+        $lab->save();
 
         return redirect()->route('lab.index')
             ->with('success','Laboratorio actualizado');
