@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/item','ItemController');
+Route::resource('/lab','LaboratorioController');

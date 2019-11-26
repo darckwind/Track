@@ -14,7 +14,8 @@ class LaboratorioController extends Controller
      */
     public function index()
     {
-        //
+        $lab = laboratorio::all();
+        return view('lab.index',compact('lab'));
     }
 
     /**
@@ -24,7 +25,7 @@ class LaboratorioController extends Controller
      */
     public function create()
     {
-        //
+        return view('lab.create');
     }
 
     /**
