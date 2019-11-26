@@ -78,7 +78,15 @@ class ItemController extends Controller
      */
     public function update(Request $request, item $item)
     {
-        //
+        $request->validate([
+            'nombre_item' => 'required'
+        ]);
+
+        $item->description = $request->input('nombre_item');
+        $item->save();
+
+        return redirect()->route('item.index')
+            ->with('success','Instrumento actualizado');
     }
 
     /**
