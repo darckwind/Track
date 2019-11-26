@@ -16,7 +16,7 @@
                     <td>{{$items->created_at}}</td>
                     <td>
                         <form action="{{ route('item.destroy',$items->id_item) }}" method="POST">
-                            <a class="btn btn-warning" href="{{ route('model.edit',$items->id_item) }}">edit</a>
+                            <a class="btn btn-warning" href="{{ route('item.edit',$items->id_item) }}">edit</a>
                             <!--selector multiples edicion de datos-->
                             @csrf
                             @method('DELETE')
