@@ -66,7 +66,7 @@ class ItemController extends Controller
      */
     public function edit(item $item)
     {
-        die($item);
+        return view('item.edit',compact('item'));
     }
 
     /**
