@@ -36,11 +36,7 @@
                 <th>Encargado</th>
                 <th>Acction</th>
             </tr>
-            @foreach($sede as $sedes)
-                <tr>
-                    <td>{{$sedes}}</td>
-                </tr>
-            @endforeach
+            {{$sede}}
         </table>
 	</div>
 
