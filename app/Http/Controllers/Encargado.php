@@ -83,6 +83,6 @@ class Encargado extends Controller
     {
         $usuario = User::find($id);
         $usuario->delete();
-        return redirect()->route('item.index');
+        return redirect()->route('enc.index');
     }
 }
