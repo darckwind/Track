@@ -15,7 +15,7 @@ class Encargado extends Controller
     public function index()
     {
         $user = User::all();
-        return view('encargados.index',compact('user'));
+        return view ('encargados.index',compact('user'));
     }
 
     /**
