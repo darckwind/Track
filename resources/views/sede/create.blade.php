@@ -41,7 +41,7 @@
                 </div>
                 <div class="form-group col-md-12">
                     <label for="exampleInputEmail1">Encargado Sede</label>
-                    <select name="encargado">
+                    <select name="encargado" class="form-control">
                         @foreach($user as $users)
                             <option value="{{$users->id}}">{{$users->name}}</option>
                         @endforeach
