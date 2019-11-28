@@ -82,7 +82,17 @@ class Encargado extends Controller
      */
     public function update(Request $request, $id)
     {
-        dd($request);
+        $user = User::find($id);
+        $user->name = $request->input('name');
+        $user->run_enc = $request->input('run');
+        $user->telefono_enc = $request->input('fono');
+        $user->id_tipo = $request->input('tipo');
+        $user->email = $request->input('email');
+        $user->password = Hash::make($request->input('password'));
+        $user->save();
+
+        return redirect()->route('enc.index');
+
     }
 
     /**
