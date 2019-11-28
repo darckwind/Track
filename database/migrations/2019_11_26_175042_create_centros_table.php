@@ -19,8 +19,8 @@ class CreateCentrosTable extends Migration
             $table->string('direccion_centro');
             $table->string('region_centro');
             $table->string('comuna_centro');
-            $table->string('run_enc');
-            $table->foreign('run_enc')->references('run_enc')->on('encargados')->onDelete('cascade');
+            $table->string('id');
+            $table->foreign('id')->references('id')->on('users')->onDelete('cascade');
             $table->unsignedBigInteger('id_estado');
             $table->foreign('id_estado')->references('id_estado')->on('estados')->onDelete('cascade');
             $table->timestamps();
