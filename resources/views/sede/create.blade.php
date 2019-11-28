@@ -51,7 +51,7 @@
                     <label for="exampleInputEmail1">Estado Sede</label>
                     <select name="estado" class="form-control">
                         @foreach($estado as $estados)
-                            <option value="{{$estados->id}}">{{$estados->descripcion}}</option>
+                            <option value="{{$estados->id_estado}}">{{$estados->descripcion}}</option>
                         @endforeach
                     </select>
                 </div>
