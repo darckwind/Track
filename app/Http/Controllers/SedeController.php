@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\estado;
 use App\sede;
 use App\User;
 use Illuminate\Http\Request;
@@ -30,8 +31,9 @@ class SedeController extends Controller
      */
     public function create()
     {
+        $estado = estado::all();
         $user = User::all()->where('id_tipo','=',1);
-        return view('sede.create',compact('user'));
+        return view('sede.create',compact('user','estado'));
     }
 
     /**
