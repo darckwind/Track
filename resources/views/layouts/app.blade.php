@@ -64,9 +64,6 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{route('lab.index')}}">Vista General usuarios</a>
                                 <a class="dropdown-item" href="{{route('lab.create')}}">Nuevo Usuario</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="{{route('lab.index')}}">Vista General Encargados</a>
-                                <a class="dropdown-item" href="{{route('lab.create')}}">Nuevo Encargado </a>
                             </div>
                         </li>
 
