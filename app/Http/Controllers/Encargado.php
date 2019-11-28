@@ -81,6 +81,7 @@ class Encargado extends Controller
      */
     public function destroy($id)
     {
-        //
+        $usuario = User::find($id);
+        dd($usuario);
     }
 }

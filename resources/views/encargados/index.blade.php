@@ -18,8 +18,8 @@
                     <td>{{$users->name }}</td>
                     <td>{{$users->run_enc}}</td>
                     <td>{{$users->email}}</td>
-                    <td>{{$users->telefono}}</td>
-                    <td></td>
+                    <td>{{$users->telefono_enc}}</td>
+                    <td>{{$users->id_tipo}}</td>
                     <td>
                         <form action="{{ route('item.destroy',$users->id) }}" method="POST">
                             @csrf
