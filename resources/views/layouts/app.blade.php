@@ -62,8 +62,8 @@
                                 RRHH
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{route('lab.index')}}">Vista General usuarios</a>
-                                <a class="dropdown-item" href="{{route('lab.create')}}">Nuevo Usuario</a>
+                                <a class="dropdown-item" href="{{route('enc.index')}}">Vista General usuarios</a>
+                                <a class="dropdown-item" href="{{route('enc.create')}}">Nuevo Usuario</a>
                             </div>
                         </li>
 
