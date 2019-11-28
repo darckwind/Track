@@ -16,8 +16,6 @@ class CreateEstadosTable extends Migration
         Schema::create('estados', function (Blueprint $table) {
             $table->bigIncrements('id_estado');
             $table->string('descripcion');
-            $table->unsignedBigInteger('id_tipo');
-            $table->foreign('id_tipo')->references('id_tipo')->on('tipos')->onDelete('cascade');
             $table->timestamps();
         });
     }
