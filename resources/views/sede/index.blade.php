@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-12 margin-tb">
                 <div class="pull-left">
-                    <h2>General View Client's</h2>
+                    <h2>Vista Sedes</h2>
                 </div>
             </div>
         </div>
