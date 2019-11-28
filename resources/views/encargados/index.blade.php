@@ -19,7 +19,13 @@
                     <td>{{$users->run_enc}}</td>
                     <td>{{$users->email}}</td>
                     <td>{{$users->telefono_enc}}</td>
-                    <td>{{$users->id_tipo}}</td>
+                    @if($users->id_tipo == 1)
+                        <td>sede</td>
+                    @elseif($users->id_tipo == 2)
+                        <td>C.E.O</td>
+                    @elseif($users->id_tipo == 3)
+                        <td>Administrador</td>
+                    @endif
                     <td>
                         <form action="{{ route('enc.destroy',$users->id) }}" method="POST">
                             @csrf
