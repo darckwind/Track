@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\sede;
+use App\User;
 use Illuminate\Http\Request;
 
 class SedeController extends Controller
@@ -14,7 +15,7 @@ class SedeController extends Controller
      */
     public function index()
     {
-        //
+        return view('sede.index');
     }
 
     /**
@@ -24,7 +25,8 @@ class SedeController extends Controller
      */
     public function create()
     {
-        //
+        $user = User::all()->where('id_tipo','=',2);
+        return view('sede.create',compact('user'));
     }
 
     /**
@@ -35,7 +37,7 @@ class SedeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
