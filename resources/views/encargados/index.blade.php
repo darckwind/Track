@@ -28,6 +28,7 @@
                     @endif
                     <td>
                         <form action="{{ route('enc.destroy',$users->id) }}" method="POST">
+                            <a class="btn btn-warning" href="{{ route('enc.edit',$users->id) }}">edit</a>
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Delete</button>

@@ -47,7 +47,7 @@ class Encargado extends Controller
         $user->password = Hash::make($request->input('password'));
         $user->save();
 
-        return redirect()->route('enc.index');
+        return redirect()->route('enc.create');
     }
 
     /**
@@ -69,7 +69,8 @@ class Encargado extends Controller
      */
     public function edit($id)
     {
-        //
+        $user =  User::find($id);
+        return view('encargados.edit',compact('user'));
     }
 
     /**
