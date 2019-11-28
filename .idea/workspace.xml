@@ -34,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SedeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-260">
-              <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+            <state relative-caret-position="779">
+              <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
               <folding>
                 <element signature="e#40#55#0#PHP" expanded="true" />
               </folding>
@@ -115,8 +115,8 @@
         <option value="$PROJECT_DIR$/database/seeds/Estado.php" />
         <option value="$PROJECT_DIR$/resources/views/item/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/sede/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/SedeController.php" />
         <option value="$PROJECT_DIR$/resources/views/sede/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SedeController.php" />
       </list>
     </option>
   </component>
@@ -340,35 +340,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574774873965</updated>
       <workItem from="1574774877519" duration="16021000" />
-      <workItem from="1574946969666" duration="18737000" />
-    </task>
-    <task id="LOCAL-00055" summary="seeder">
-      <created>1574952308335</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1574952308335</updated>
-    </task>
-    <task id="LOCAL-00056" summary="seeder">
-      <created>1574952382649</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1574952382649</updated>
-    </task>
-    <task id="LOCAL-00057" summary="users more data">
-      <created>1574954534267</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1574954534267</updated>
-    </task>
-    <task id="LOCAL-00058" summary="users more data">
-      <created>1574954638895</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1574954638895</updated>
+      <workItem from="1574946969666" duration="18985000" />
     </task>
     <task id="LOCAL-00059" summary="users more data">
       <created>1574954806495</created>
@@ -685,15 +657,42 @@
       <option name="project" value="LOCAL" />
       <updated>1574979868484</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="seeder estados y desvinculacion con tipos">
+      <created>1574980113437</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1574980113437</updated>
+    </task>
+    <task id="LOCAL-00105" summary="seeder estados y desvinculacion con tipos">
+      <created>1574980117855</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1574980117855</updated>
+    </task>
+    <task id="LOCAL-00106" summary="seeder estados y desvinculacion con tipos">
+      <created>1574980141099</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1574980141099</updated>
+    </task>
+    <task id="LOCAL-00107" summary="seeder estados y desvinculacion con tipos">
+      <created>1574980197828</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1574980197828</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34758000" />
+    <option name="totallyTimeSpent" value="35006000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24071082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1052,8 +1051,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SedeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+        <state relative-caret-position="779">
+          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
           <folding>
             <element signature="e#40#55#0#PHP" expanded="true" />
           </folding>

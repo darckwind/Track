@@ -36,7 +36,22 @@
                 <th>Encargado</th>
                 <th>Acction</th>
             </tr>
-            {{$sede}}
+            @foreach($sede as $sedes)
+                <tr>
+                    <td>{{$sedes->nombre_sede}}</td>
+                    <td>{{$sedes->direccion_sede}}</td>
+                    <th>{{$sedes->name}}</th>
+                    <td>
+                        <form action="{{ route('sede.destroy',$sedes->id_sede) }}" method="POST">
+                            <a class="btn btn-warning" href="{{ route('sede.edit',$sedes->id_sede) }}">edit</a>
+                            <!--selector multiples edicion de datos-->
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            @endforeach
         </table>
 	</div>
 
