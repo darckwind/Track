@@ -13,13 +13,13 @@ class Tipos extends Seeder
     public function run()
     {
         DB::table('tipos')->insert([
-            'des_tipo' => 'sede',
+            'des_tipo' => 'sede'
         ]);
         DB::table('roles')->insert([
-            'des_tipo' => 'CEO',
+            'des_tipo' => 'CEO'
         ]);
         DB::table('tipos')->insert([
-            'des_tipo' => 'admin',
+            'des_tipo' => 'admin'
         ]);
 
     }
