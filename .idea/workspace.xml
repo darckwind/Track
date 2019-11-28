@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dff3ce6b-8c27-4a51-8d7f-5b227e82bec1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Encargado.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Encargado.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/encargados/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/encargados/edit.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,10 +15,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/encargados/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
+            <state relative-caret-position="-149">
               <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
             </state>
           </provider>
@@ -34,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Encargado.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="221">
+              <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
               <folding>
                 <element signature="e#40#53#0#PHP" expanded="true" />
               </folding>
@@ -108,8 +107,8 @@
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/encargados/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/encargados/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Encargado.php" />
         <option value="$PROJECT_DIR$/resources/views/encargados/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Encargado.php" />
       </list>
     </option>
   </component>
@@ -339,21 +338,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574774873965</updated>
       <workItem from="1574774877519" duration="16021000" />
-      <workItem from="1574946969666" duration="11234000" />
-    </task>
-    <task id="LOCAL-00029" summary="laboratorioa">
-      <created>1574801928979</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1574801928979</updated>
-    </task>
-    <task id="LOCAL-00030" summary="laboratorioa">
-      <created>1574802034506</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1574802034506</updated>
+      <workItem from="1574946969666" duration="11692000" />
     </task>
     <task id="LOCAL-00031" summary="laboratorioa">
       <created>1574802057403</created>
@@ -684,11 +669,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574969141351</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="users more data">
+      <created>1574969228697</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1574969228697</updated>
+    </task>
+    <task id="LOCAL-00079" summary="users more data">
+      <created>1574969443352</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1574969443352</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27255000" />
+    <option name="totallyTimeSpent" value="27713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="745" extended-state="0" />
@@ -976,20 +975,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Encargado.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/encargados/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="-149">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/encargados/edit.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Encargado.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        <state relative-caret-position="221">
+          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

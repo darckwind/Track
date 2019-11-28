@@ -88,7 +88,9 @@ class Encargado extends Controller
         $user->telefono_enc = $request->input('fono');
         $user->id_tipo = $request->input('tipo');
         $user->email = $request->input('email');
-        $user->password = Hash::make($request->input('password'));
+        if($request->input('password')!=""){
+            $user->password = Hash::make($request->input('password'));
+        }
         $user->save();
 
         return redirect()->route('enc.index');
