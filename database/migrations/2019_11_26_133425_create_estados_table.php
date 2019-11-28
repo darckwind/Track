@@ -13,11 +13,6 @@ class CreateEstadosTable extends Migration
      */
     public function up()
     {
-        Schema::create('tipos', function (Blueprint $table) {
-            $table->bigIncrements('id_tipo');
-            $table->string('des_tipo');
-            $table->timestamps();
-        });
         Schema::create('estados', function (Blueprint $table) {
             $table->bigIncrements('id_estado');
             $table->string('descripcion');
@@ -35,6 +30,5 @@ class CreateEstadosTable extends Migration
     public function down()
     {
         Schema::dropIfExists('estados');
-        Schema::dropIfExists('tipos');
     }
 }

@@ -18,6 +18,9 @@ class Tipos extends Seeder
         DB::table('roles')->insert([
             'des_tipo' => 'CEO',
         ]);
+        DB::table('tipos')->insert([
+            'des_tipo' => 'admin',
+        ]);
 
     }
 }
