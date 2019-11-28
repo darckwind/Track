@@ -67,7 +67,7 @@
                                 <select name="tipo"  class="form-control">
                                     <option value="1">Sede</option>
                                     <option value="2">CEO</option>
-                                    <option value="3">dios</option>
+                                    <option value="3">Administrador</option>
                                 </select>
                             </div>
                         </div>

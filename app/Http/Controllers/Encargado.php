@@ -25,7 +25,7 @@ class Encargado extends Controller
      */
     public function create()
     {
-        //
+        return view ('encargados.create');
     }
 
     /**
