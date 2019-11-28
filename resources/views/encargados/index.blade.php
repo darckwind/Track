@@ -11,6 +11,7 @@
                 <th>email</th>
                 <th>telefono</th>
                 <th>cargo</th>
+                <th>accion</th>
             </tr>
             @foreach($user as $users)
                 <tr>
