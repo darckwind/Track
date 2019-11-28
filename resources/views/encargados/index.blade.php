@@ -21,7 +21,7 @@
                     <td>{{$users->telefono_enc}}</td>
                     <td>{{$users->id_tipo}}</td>
                     <td>
-                        <form action="{{ route('item.destroy',$users->id) }}" method="POST">
+                        <form action="{{ route('enc.destroy',$users->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Delete</button>
