@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dff3ce6b-8c27-4a51-8d7f-5b227e82bec1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/seeds/Estado.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_26_133425_create_estados_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_26_133425_create_estados_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/estado.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/estado.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/sede/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="39" column="80" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="80" />
+            <state relative-caret-position="402">
+              <caret line="46" column="22" lean-forward="true" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -38,20 +37,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SedeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+            <state relative-caret-position="292">
+              <caret line="35" column="54" lean-forward="true" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
               <folding>
-                <element signature="e#40#53#0#PHP" expanded="true" />
+                <element signature="e#40#55#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/seeds/Estado.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state>
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="e#7#38#0#PHP" expanded="true" />
               </folding>
@@ -64,6 +63,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
               <caret line="17" column="39" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/estado.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -152,13 +160,14 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Encargado.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/sede/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/sede/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/sede.php" />
         <option value="$PROJECT_DIR$/resources/views/sede/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/SedeController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_26_133425_create_estados_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/Estado.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SedeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/sede/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/estado.php" />
       </list>
     </option>
   </component>
@@ -382,28 +391,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574774873965</updated>
       <workItem from="1574774877519" duration="16021000" />
-      <workItem from="1574946969666" duration="16727000" />
-    </task>
-    <task id="LOCAL-00042" summary="laboratorioa">
-      <created>1574803836553</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1574803836553</updated>
-    </task>
-    <task id="LOCAL-00043" summary="personal">
-      <created>1574805392346</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1574805392346</updated>
-    </task>
-    <task id="LOCAL-00044" summary="eliminacion de encargados">
-      <created>1574947419239</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1574947419239</updated>
+      <workItem from="1574946969666" duration="17362000" />
     </task>
     <task id="LOCAL-00045" summary="usuarios">
       <created>1574949015417</created>
@@ -727,14 +715,36 @@
       <option name="project" value="LOCAL" />
       <updated>1574976531128</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="seeder estados y desvinculacion con tipos">
+      <created>1574976929421</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1574976929421</updated>
+    </task>
+    <task id="LOCAL-00092" summary="seeder estados y desvinculacion con tipos">
+      <created>1574977044470</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1574977044470</updated>
+    </task>
+    <task id="LOCAL-00093" summary="seeder estados y desvinculacion con tipos">
+      <created>1574977248348</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1574977248348</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32748000" />
+    <option name="totallyTimeSpent" value="33383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24071082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -780,7 +790,8 @@
     <MESSAGE value="seeder" />
     <MESSAGE value="users more data" />
     <MESSAGE value="sedes" />
-    <option name="LAST_COMMIT_MESSAGE" value="sedes" />
+    <MESSAGE value="seeder estados y desvinculacion con tipos" />
+    <option name="LAST_COMMIT_MESSAGE" value="seeder estados y desvinculacion con tipos" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_140523_create_laboratorios_table.php" />
@@ -897,13 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/item.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -998,24 +1002,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/sede/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="39" column="80" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/sede.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/sede/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1047,16 +1037,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SedeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/Tipos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1067,6 +1047,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sede/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SedeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="35" column="54" lean-forward="true" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+          <folding>
+            <element signature="e#40#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sede/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="46" column="22" lean-forward="true" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/Estado.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#7#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EstadoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_133425_create_estados_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
@@ -1074,13 +1102,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/Estado.php">
+    <entry file="file://$PROJECT_DIR$/app/estado.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="e#7#38#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
         </state>
       </provider>
     </entry>
