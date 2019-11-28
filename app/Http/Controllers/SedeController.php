@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\sede;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SedeController extends Controller
 {
@@ -15,7 +16,11 @@ class SedeController extends Controller
      */
     public function index()
     {
-        return view('sede.index');
+        $sede = DB::table('sedes')
+            ->join('users', 'users.id', '=', 'sedes.id_user')
+            ->select('sedes.id_sede', 'sedes.nombre_sede','sedes.direccion_sede','users.name')
+            ->get();
+        return view('sede.index',compact('sede'));
     }
 
     /**
@@ -37,7 +42,13 @@ class SedeController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        $sede = new sede();
+        $sede->nombre_sede = $request->input('nombre_sede');
+        $sede->direccion_sede = $request->input('direccion_sede');
+        $sede->id_users = $request->input('encargado');
+        $sede->save();
+
+        return view('sede.index');
     }
 
     /**

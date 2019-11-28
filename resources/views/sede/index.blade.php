@@ -6,17 +6,19 @@
 
         <table class="table table-responsive-sm">
             <tr>
-                <th>nombre instrumento</th>
-                <th>creado</th>
+                <th>Nombre Sede</th>
+                <th>Direccion</th>
+                <th>Encargado</th>
                 <th>Acction</th>
             </tr>
-            @foreach($lab as $labs)
+            @foreach($sede as $sedes)
                 <tr>
-                    <td>{{$labs->nombre_lab }}</td>
-                    <td>{{$labs->created_at}}</td>
+                    <td>{{$sedes->nombre_sede}}</td>
+                    <td>{{$sedes->direccion_sede}}</td>
+                    <th>{{$sedes->encargado}}</th>
                     <td>
-                        <form action="{{ route('lab.destroy',$labs->id_laboratorio) }}" method="POST">
-                            <a class="btn btn-warning" href="{{ route('lab.edit',$labs->id_laboratorio) }}">edit</a>
+                        <form action="{{ route('sede.destroy',$sedes->id_sede) }}" method="POST">
+                            <a class="btn btn-warning" href="{{ route('sede.edit',$sedes->id_sede) }}">edit</a>
                             <!--selector multiples edicion de datos-->
                             @csrf
                             @method('DELETE')
