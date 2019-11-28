@@ -57,11 +57,7 @@ class SedeController extends Controller
         $sede->id_estado = $request->input('estado');
         $sede->save();
 
-        $sede = DB::table('sedes')
-            ->join('users', 'users.id', '=', 'sedes.id_users')
-            ->select('sedes.id_sede', 'sedes.nombre_sede','sedes.direccion_sede','users.name')
-            ->get();
-        return view('sede.index',compact('sede'));
+        return view('sede.create');
     }
 
     /**
