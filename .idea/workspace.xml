@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dff3ce6b-8c27-4a51-8d7f-5b227e82bec1" name="Default Changelist" comment="" />
+    <list default="true" id="dff3ce6b-8c27-4a51-8d7f-5b227e82bec1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_26_160954_create_sedes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_26_160954_create_sedes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_26_175042_create_centros_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_26_175042_create_centros_table.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +16,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="165">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_160954_create_sedes_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_175042_create_centros_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -49,9 +70,7 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_11_26_142039_create_sedes_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_26_141543_create_laboratorios_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_26_140943_create_encargados_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_11_26_175042_create_centros_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_26_175511_create_envio_centros_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_11_26_160954_create_sedes_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_26_160251_create_encargados_table.php" />
         <option value="$PROJECT_DIR$/resources/views/item/index.blade.php" />
         <option value="$PROJECT_DIR$/app/item.php" />
@@ -71,6 +90,8 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_11_26_133425_create_estados_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/Tipos.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_11_26_160954_create_sedes_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_11_26_175042_create_centros_table.php" />
       </list>
     </option>
   </component>
@@ -285,7 +306,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574774873965</updated>
       <workItem from="1574774877519" duration="16021000" />
-      <workItem from="1574946969666" duration="1483000" />
+      <workItem from="1574946969666" duration="1774000" />
     </task>
     <task id="LOCAL-00001" summary="tabla estados">
       <created>1574775417845</created>
@@ -595,14 +616,29 @@
       <option name="project" value="LOCAL" />
       <updated>1574947419239</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="usuarios">
+      <created>1574949015417</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1574949015417</updated>
+    </task>
+    <task id="LOCAL-00046" summary="usuarios">
+      <created>1574949157318</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1574949157318</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17504000" />
+    <option name="totallyTimeSpent" value="17795000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="745" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20759289" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -620,7 +656,7 @@
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32924962" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.32924962" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.22358346" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.43950996" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -644,7 +680,8 @@
     <MESSAGE value="laboratorioa" />
     <MESSAGE value="personal" />
     <MESSAGE value="eliminacion de encargados" />
-    <option name="LAST_COMMIT_MESSAGE" value="eliminacion de encargados" />
+    <MESSAGE value="usuarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="usuarios" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_140523_create_laboratorios_table.php" />
@@ -653,20 +690,6 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_140943_create_encargados_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_141543_create_laboratorios_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_140831_create_tipos_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_175042_create_centros_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_175511_create_envio_centros_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/item/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -737,20 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_160954_create_sedes_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_172403_create_envio_sedes_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/lab/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -810,10 +819,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_172403_create_envio_sedes_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="165">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_175511_create_envio_centros_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_160954_create_sedes_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_175042_create_centros_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
         </state>
       </provider>
     </entry>
