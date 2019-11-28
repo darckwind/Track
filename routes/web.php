@@ -20,4 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/item','ItemController');
 Route::resource('/lab','LaboratorioController');
-Route::get('/enc','EncargadoController@index');
+Route::resource('/enc','Encargado');
