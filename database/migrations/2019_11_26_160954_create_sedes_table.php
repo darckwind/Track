@@ -17,8 +17,8 @@ class CreateSedesTable extends Migration
             $table->bigIncrements('id_sede');
             $table->string('nombre_sede');
             $table->string('direccion_sede');
-            $table->string('id');
-            $table->foreign('id')->references('id')->on('users')->onDelete('cascade');
+            $table->string('id_users');
+            $table->foreign('id_users')->references('id')->on('users')->onDelete('cascade');
             $table->unsignedBigInteger('id_estado');
             $table->foreign('id_estado')->references('id_estado')->on('estados')->onDelete('cascade');
             $table->timestamps();
