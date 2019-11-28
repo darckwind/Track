@@ -25,7 +25,7 @@ class SedeController extends Controller
      */
     public function create()
     {
-        $user = User::all()->where('id_tipo','=',2);
+        $user = User::all();
         return view('sede.create',compact('user'));
     }
 
