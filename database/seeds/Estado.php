@@ -13,7 +13,7 @@ class Estado extends Seeder
     public function run()
     {
         DB::table('estados')->insert([
-            'descripcion' => 'En Centro'
+            'descripcion' => 'En Origen'
         ]);
         DB::table('estados')->insert([
             'descripcion' => 'Enviado'
@@ -22,7 +22,7 @@ class Estado extends Seeder
             'descripcion' => 'En Camino'
         ]);
         DB::table('estados')->insert([
-            'descripcion' => 'Recepcionado'
+            'descripcion' => 'Recepcionado en destino'
         ]);
     }
 }
