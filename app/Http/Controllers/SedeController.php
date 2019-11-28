@@ -44,6 +44,12 @@ class SedeController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'nombre_sede' => 'required',
+            'encargado' => 'required',
+            'direccion_sede' => 'required',
+            'estado' => 'required'
+        ]);
         $sede = new sede();
         $sede->nombre_sede = $request->input('nombre_sede');
         $sede->direccion_sede = $request->input('direccion_sede');
