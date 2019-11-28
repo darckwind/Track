@@ -22,8 +22,6 @@
                     <td></td>
                     <td>
                         <form action="{{ route('item.destroy',$users->id) }}" method="POST">
-                            <a class="btn btn-warning" href="{{ route('item.edit',$users->id) }}">edit</a>
-                            <!--selector multiples edicion de datos-->
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Delete</button>
