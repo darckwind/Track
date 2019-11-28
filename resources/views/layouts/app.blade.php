@@ -50,8 +50,8 @@
                                 <a class="dropdown-item" href="{{route('lab.index')}}">Vista General Laboratorios</a>
                                 <a class="dropdown-item" href="{{route('lab.create')}}">Nuevo Laboratorio </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="{{route('lab.index')}}">Vista General Sede</a>
-                                <a class="dropdown-item" href="{{route('lab.create')}}">Nuevo Sede </a>
+                                <a class="dropdown-item" href="{{route('sede.index')}}">Vista General Sede</a>
+                                <a class="dropdown-item" href="{{route('sede.create')}}">Nuevo Sede </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{route('lab.index')}}">Vista General CEO</a>
                                 <a class="dropdown-item" href="{{route('lab.create')}}">Nuevo CEO </a>
