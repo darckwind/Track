@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class Encargado extends Controller
 {
@@ -36,7 +37,17 @@ class Encargado extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+
+        $user = new User();
+        $user->name = $request->input('name');
+        $user->run_enc = $request->input('run');
+        $user->telefono_enc = $request->input('fono');
+        $user->id_tipo = $request->input('tipo');
+        $user->email = $request->input('email');
+        $user->password = Hash::make($request->input('password'));
+        $user->save();
+
+        return redirect()->route('enc.index');
     }
 
     /**
