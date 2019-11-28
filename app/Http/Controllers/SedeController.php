@@ -59,7 +59,10 @@ class SedeController extends Controller
      */
     public function edit(sede $sede)
     {
-        //
+        die($sede);
+        $sedes = sede::find($sede);
+        $user = User::all()->where('id_tipo','=',1);
+        return view('sede.edit',compact('user','sede'));
     }
 
     /**
