@@ -44,7 +44,7 @@
                     <label for="exampleInputEmail1">Encargado Previo Sede</label>
                         @foreach($user as $users)
                             @if($users->id == $sede->id_users)
-                                <input type="text" class="form-control" value="{{$users->name}}">
+                                <input type="text" class="form-control" value="{{$users->name}}" readonly>
                             @endif
                         @endforeach
                 </div>
