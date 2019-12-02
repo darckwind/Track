@@ -105,6 +105,11 @@ class SedeController extends Controller
      */
     public function destroy(sede $sede)
     {
-        //
+        $sede->delete();
+
+        $estado = estado::all();
+        $user = User::all()->where('id_tipo','=',1);
+        return view('sede.create',compact('user','estado'));
+
     }
 }
