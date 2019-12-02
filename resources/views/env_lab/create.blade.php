@@ -4,5 +4,6 @@
     <div class="container">
         {{$sede}}
         {{$lab}}
+        {{$item}}
     </div>
 @endsection
