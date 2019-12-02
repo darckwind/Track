@@ -26,21 +26,24 @@
                 </ul>
             </div>
         @endif
-{{$sede}}
+{{$encargado}}
         <form action="{{ route('sede.update',$sede->id_sede) }}" method="POST">
             @csrf
             @method('PUT')
             <div class="row">
-                <div class="form-group col-md-12">
+                <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Nombre Sede</label>
-                    <input type="text" class="form-control" name="nombre_sede">
+                    <input type="text" class="form-control" name="nombre_sede" value="{{$sedes->nombre_sede}}">
                     <small  class="form-text text-muted">en caso de usar una abreviacion, que esta sea facil de identificar</small>
                 </div>
-                <div class="form-group col-md-12">
+                <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Dirección Sede</label>
-                    <input type="text" class="form-control" name="direccion_sede">
+                    <input type="text" class="form-control" name="direccion_sede" value="{{$sedes->direccion_sede}}">
                 </div>
-                <div class="form-group col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="exampleInputEmail1">Encargado previo Sede</label>
+                    <input type="text" class="form-control" value="{{$sedes->direccion_sede}}">
+                <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Encargado Sede</label>
                     <select name="encargado" class="form-control">
                         @foreach($user as $users)
