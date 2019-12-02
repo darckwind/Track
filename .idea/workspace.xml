@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dff3ce6b-8c27-4a51-8d7f-5b227e82bec1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/env_lab/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/env_lab/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/env_lab/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/env_lab/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/env_lab/create.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
+            <state relative-caret-position="316">
+              <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -39,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/env_lab/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="38">
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -50,10 +48,17 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>$item</find>
+      <find>$sedes</find>
+      <find>form</find>
+      <find>id=&quot;&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>$user</replace>
+      <replace>class=&quot;form-control&quot;</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/resources/views</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -275,6 +280,13 @@
             <path>
               <item name="Track" type="b2602c69:ProjectViewProjectNode" />
               <item name="Track" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="sede" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Track" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Track" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -333,35 +345,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574774873965</updated>
       <workItem from="1574774877519" duration="16021000" />
-      <workItem from="1574946969666" duration="27403000" />
-    </task>
-    <task id="LOCAL-00094" summary="seeder estados y desvinculacion con tipos">
-      <created>1574977559481</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1574977559481</updated>
-    </task>
-    <task id="LOCAL-00095" summary="seeder estados y desvinculacion con tipos">
-      <created>1574979167845</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1574979167845</updated>
-    </task>
-    <task id="LOCAL-00096" summary="seeder estados y desvinculacion con tipos">
-      <created>1574979217073</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1574979217073</updated>
-    </task>
-    <task id="LOCAL-00097" summary="seeder estados y desvinculacion con tipos">
-      <created>1574979276989</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1574979276989</updated>
+      <workItem from="1574946969666" duration="28485000" />
     </task>
     <task id="LOCAL-00098" summary="seeder estados y desvinculacion con tipos">
       <created>1574979399756</created>
@@ -678,11 +662,39 @@
       <option name="project" value="LOCAL" />
       <updated>1575310267807</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="index envios lab">
+      <created>1575311249603</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1575311249603</updated>
+    </task>
+    <task id="LOCAL-00144" summary="index envios lab">
+      <created>1575311308578</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1575311308578</updated>
+    </task>
+    <task id="LOCAL-00145" summary="index envios lab">
+      <created>1575311400140</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1575311400140</updated>
+    </task>
+    <task id="LOCAL-00146" summary="index envios lab">
+      <created>1575311992963</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1575311992963</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43424000" />
+    <option name="totallyTimeSpent" value="44506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -994,13 +1006,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/sede/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="53" column="64" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/sede/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -1053,6 +1058,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/env_lab/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1060,17 +1072,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/sede/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
+        <state relative-caret-position="136">
+          <caret line="50" column="71" lean-forward="true" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/env_lab/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="38">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
         </state>
       </provider>
     </entry>
