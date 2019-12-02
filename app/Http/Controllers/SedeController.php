@@ -96,7 +96,7 @@ class SedeController extends Controller
      */
     public function update(Request $request, sede $sede)
     {
-        //
+        dd($sede);
     }
 
     /**
