@@ -57,7 +57,9 @@ class SedeController extends Controller
         $sede->id_estado = $request->input('estado');
         $sede->save();
 
-        return view('sede.create');
+        $estado = estado::all();
+        $user = User::all()->where('id_tipo','=',1);
+        return view('sede.create',compact('user','estado'));
     }
 
     /**
