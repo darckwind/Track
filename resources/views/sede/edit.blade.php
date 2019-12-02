@@ -44,7 +44,7 @@
                     <select name="encargado" class="form-control">
                         @foreach($user as $users)
                             @if($users->id == $sede->id_users)
-                                <option value="{{$users->id}}"> Encargado previo {{$users->name}}</option>
+                                <option> Encargado previo {{$users->name}}</option>
                             @endif
                         @endforeach
                             <option>---------------------------------------------</option>
@@ -58,7 +58,7 @@
                     <select name="estado" class="form-control">
                         @foreach($estado as $estados)
                             @if($estados->id_estado == $sede->id_estado)
-                                <option value="{{$estados->id_estado}}">Estado Previo {{$estados->descripcion}}</option>
+                                <option>Estado Previo {{$estados->descripcion}}</option>
                             @endif
                         @endforeach
                             <option>---------------------------------------------</option>

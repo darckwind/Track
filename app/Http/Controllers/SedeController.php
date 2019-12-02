@@ -96,7 +96,15 @@ class SedeController extends Controller
      */
     public function update(Request $request, sede $sede)
     {
-        dd($sede);
+        $sede->nombre_sede = $request->input('nombre_sede');
+        $sede->direccion_sede = $request->input('direccion_sede');
+        $sede->id_users = $request->input('encargado');
+        $sede->id_estado = $request->input('estado');
+        $sede->save();
+
+        $estado = estado::all();
+        $user = User::all()->where('id_tipo','=',1);
+        return view('sede.create',compact('user','estado'));
     }
 
     /**
