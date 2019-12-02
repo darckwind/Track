@@ -34,6 +34,7 @@
                 <th>Nombre Sede</th>
                 <th>Direccion</th>
                 <th>Encargado</th>
+                <th>Estado</th>
                 <th>Acction</th>
             </tr>
             @foreach($sede as $sedes)
@@ -41,6 +42,7 @@
                     <td>{{$sedes->nombre_sede}}</td>
                     <td>{{$sedes->direccion_sede}}</td>
                     <th>{{$sedes->name}}</th>
+                    <th>{{$sedes->descripcion}}</th>
                     <td>
                         <form action="{{ route('sede.destroy',$sedes->id_sede) }}" method="POST">
                             <a class="btn btn-warning" href="{{ route('sede.edit',$sedes->id_sede) }}">edit</a>
