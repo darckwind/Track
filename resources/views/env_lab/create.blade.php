@@ -21,7 +21,7 @@
                         @endforeach
                     </select>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8" style="margin-top: 2%;">
                     <label for="exampleInputEmail1">Instrumento</label>
                     <select name="item" class="form-control">
                         @foreach($item as $items)
@@ -29,7 +29,7 @@
                         @endforeach
                     </select>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" style="margin-top: 2%;">
                     <label for="exampleInputEmail1">Cantidad</label>
                     <input type="number" class="form-control" name="cantidad" min="0">
                 </div>
