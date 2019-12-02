@@ -3,7 +3,11 @@
 @section('content')
 
 	<div class="container">
-
+        <div class="col-lg-12 margin-tb">
+            <div class="pull-left">
+                <h2>Vista general Sedes</h2>
+            </div>
+        </div>
         <table class="table table-responsive-sm">
             <tr>
                 <th>nombre instrumento</th>
