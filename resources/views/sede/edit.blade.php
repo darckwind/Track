@@ -26,7 +26,6 @@
                 </ul>
             </div>
         @endif
-        {{\App\User::find($sede->id_users)}}
         <form action="{{ route('sede.update',$sede->id_sede) }}" method="POST">
             @csrf
             @method('PUT')
@@ -42,7 +41,12 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Encargado previo Sede</label>
-                    <input type="text" class="form-control" value="{{$sedes->direccion_sede}}">
+                    @foreach($user as $users)
+                        @if($users->id == $sedes->id_users)
+                            <input type="text" class="form-control" value="{{$users->name}}" readonly>
+                        @endif
+                    @endforeach
+
                 <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Encargado Sede</label>
                     <select name="encargado" class="form-control">
