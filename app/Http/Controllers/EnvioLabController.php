@@ -7,6 +7,7 @@ use App\item;
 use App\laboratorio;
 use App\sede;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class EnvioLabController extends Controller
 {
@@ -17,9 +18,14 @@ class EnvioLabController extends Controller
      */
     public function index()
     {
-        $enviados = envio_lab::all();
 
-        return view('env_lab.index',compact('enviados'));
+        $enviado = DB::table('envio_labs')
+            ->join('laboratorios', 'laboratorios.id_laboratorio', '=', 'envio_labs.id_laboratorio')
+            ->join('items', 'items.id_item', '=', 'envio_labs.id_item')
+            ->select('envio_labs.*', 'items.descripcion','laboratorios.nombre_lab')
+            ->get();
+
+        return view('env_lab.index',compact('enviado'));
     }
 
     /**

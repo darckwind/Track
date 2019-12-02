@@ -16,16 +16,17 @@
                 <th>Creado en</th>
                 <th>Accion</th>
             </tr>
-
-            <tr>
-                <td>s</td>
-                <td>s</td>
-                <td>s</td>
-                <td>s</td>
-                <td>
-                    {{$enviados}}
-                </td>
-            </tr>
+            @foreach($enviado as $envs)
+                <tr>
+                    <td>{{$envs->nombre_lab}}</td>
+                    <td>{{$envs->descripcion}}</td>
+                    <td>{{$envs->cantidad}}</td>
+                    <td>{{$envs->createat}}</td>
+                    <td>
+                        holo
+                    </td>
+                </tr>
+            @endforeach
         </table>
     </div>
 
