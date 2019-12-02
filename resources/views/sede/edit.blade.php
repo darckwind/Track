@@ -26,7 +26,7 @@
                 </ul>
             </div>
         @endif
-{{$encargado}}
+        {{\App\User::find($sede->id_users)}}
         <form action="{{ route('sede.update',$sede->id_sede) }}" method="POST">
             @csrf
             @method('PUT')
