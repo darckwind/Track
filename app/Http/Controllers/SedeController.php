@@ -124,7 +124,8 @@ class SedeController extends Controller
 
         $sede = DB::table('sedes')
             ->join('users', 'users.id', '=', 'sedes.id_users')
-            ->select('sedes.id_sede', 'sedes.nombre_sede','sedes.direccion_sede','users.name')
+            ->join('estados', 'estados.id_estado', '=', 'sedes.id_estado')
+            ->select('sedes.id_sede', 'sedes.nombre_sede','sedes.direccion_sede','users.name','estados.descripcion')
             ->get();
         return view('sede.index',compact('sede'));
 

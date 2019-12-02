@@ -22,3 +22,4 @@ Route::resource('/item','ItemController');
 Route::resource('/lab','LaboratorioController');
 Route::resource('/sede','SedeController');
 Route::resource('/enc','Encargado');
+Route::resource('/envlab','EnvioLabController');
