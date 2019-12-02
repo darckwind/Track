@@ -13,7 +13,7 @@
                 <th>Laboratorio</th>
                 <th>Instrumento</th>
                 <th>Cantidad</th>
-                <th>Creado en</th>
+
                 <th>Accion</th>
             </tr>
             @foreach($enviado as $envs)
@@ -21,7 +21,7 @@
                     <td>{{$envs->nombre_lab}}</td>
                     <td>{{$envs->description}}</td>
                     <td>{{$envs->cantidad}}</td>
-                    <td>{{$envs->createat}}</td>
+
                     <td>
                         holo
                     </td>
