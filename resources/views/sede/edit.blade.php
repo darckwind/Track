@@ -26,7 +26,7 @@
                 </ul>
             </div>
         @endif
-
+{{$sede}}
         <form action="{{ route('sede.update',$sede->id_sede) }}" method="POST">
             @csrf
             @method('PUT')
