@@ -42,11 +42,7 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Encargado Previo Sede</label>
-                        @foreach($user as $users)
-                            @if($users->id == $sede->id_users)
-                                <input type="text" class="form-control" value="{{$users->name}}">
-                            @endif
-                        @endforeach
+
 
                 </div>
                 <div class="form-group col-md-6">
