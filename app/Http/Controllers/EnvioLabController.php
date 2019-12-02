@@ -27,11 +27,10 @@ class EnvioLabController extends Controller
      */
     public function create()
     {
-        $sede = sede::all();
         $lab = laboratorio::all();
         $item = item::all();
 
-        return view('env_lab.create',compact('sede','lab'))->with(compact('item'));
+        return view('env_lab.create',compact('item','lab'));
     }
 
     /**
@@ -42,7 +41,19 @@ class EnvioLabController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        $request->validate([
+            'lab' => 'required',
+            'item' => 'required',
+            'cantidad' => 'required'
+        ]);
+
+        $envio =  new envio_lab();
+        $envio->id_item = $request->input('item');
+        $envio->id_laboratorio = $request->input('lab');
+        $envio->cantidad = $request->input('cantidad');
+        $envio->save();
+
+        return view('env_lab.create',compact('item','lab'));
     }
 
     /**

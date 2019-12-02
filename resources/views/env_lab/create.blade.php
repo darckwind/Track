@@ -5,15 +5,7 @@
         <form action="{{ route('envlab.store') }}" method="POST">
             <div class="row">
                 @csrf
-                <div class="col-md-6">
-                    <label for="exampleInputEmail1">Sede</label>
-                    <select name="sede" class="form-control">
-                        @foreach($sede as $sedes)
-                            <option value="{{$sedes->id_sede}}">{{$sedes->nombre_sede}}</option>
-                        @endforeach
-                    </select>
-                </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <label for="exampleInputEmail1">Laboratorio</label>
                     <select name="lab" class="form-control">
                         @foreach($lab as $labs)
@@ -21,7 +13,7 @@
                         @endforeach
                     </select>
                 </div>
-                <div class="col-md-8" style="margin-top: 2%;">
+                <div class="col-md-4" style="margin-top: 2%;">
                     <label for="exampleInputEmail1">Instrumento</label>
                     <select name="item" class="form-control">
                         @foreach($item as $items)
