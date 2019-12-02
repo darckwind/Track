@@ -48,8 +48,7 @@
                             @endif
                         @endforeach
                         @foreach($user as $users)
-
-                        @endforeach
+                                <option value="{{$users->id}}"> Encargado previo {{$users->name}}</option>                        @endforeach
                     </select>
                 </div>
                 <div class="form-group col-md-6">
