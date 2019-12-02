@@ -42,7 +42,7 @@
                     <td>{{$sedes->nombre_sede}}</td>
                     <td>{{$sedes->direccion_sede}}</td>
                     <th>{{$sedes->name}}</th>
-                    <th>{{$sedes->descripcion}}</th>
+                    <th>{{$sedes->name}}</th>
                     <td>
                         <form action="{{ route('sede.destroy',$sedes->id_sede) }}" method="POST">
                             <a class="btn btn-warning" href="{{ route('sede.edit',$sedes->id_sede) }}">edit</a>
