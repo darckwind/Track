@@ -22,7 +22,7 @@ class EnvioLabController extends Controller
         $enviado = DB::table('envio_labs')
             ->join('laboratorios', 'laboratorios.id_laboratorio', '=', 'envio_labs.id_laboratorio')
             ->join('items', 'items.id_item', '=', 'envio_labs.id_item')
-            ->select('envio_labs.*', 'items.descripcion','laboratorios.nombre_lab')
+            ->select('envio_labs.id_env_lab','envio_labs.cantidad', 'items.descripcion','laboratorios.nombre_lab')
             ->get();
 
         return view('env_lab.index',compact('enviado'));
