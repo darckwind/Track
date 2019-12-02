@@ -23,13 +23,7 @@
                 <td>s</td>
                 <td>s</td>
                 <td>
-                    <form action="{{ route('envlab.destroy',$envio->id_env_lab) }}" method="POST">
-                        <a class="btn btn-warning" href="{{ route('lab.edit',$envio->id_env_lav) }}">edit</a>
-                        <!--selector multiples edicion de datos-->
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
+                    {{$enviados}}
                 </td>
             </tr>
         </table>

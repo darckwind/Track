@@ -17,7 +17,9 @@ class EnvioLabController extends Controller
      */
     public function index()
     {
-        return view('env_lab.index');
+        $enviados = envio_lab::all();
+
+        return view('env_lab.index',compact('enviados'));
     }
 
     /**
@@ -53,6 +55,9 @@ class EnvioLabController extends Controller
         $envio->cantidad = $request->input('cantidad');
         $envio->save();
 
+
+        $lab = laboratorio::all();
+        $item = item::all();
         return view('env_lab.create',compact('item','lab'));
     }
 
