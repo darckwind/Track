@@ -26,6 +26,7 @@
                 </ul>
             </div>
         @endif
+{{$sede}}
         <form action="{{ route('sede.update',$sede->id_sede) }}" method="POST">
             @csrf
             @method('PUT')
@@ -40,13 +41,14 @@
                     <input type="text" class="form-control" name="direccion_sede" value="{{$sedes->direccion_sede}}">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="exampleInputEmail1">Encargado previo Sede</label>
-                    @foreach($user as $users)
-                        @if($users->id == $sedes->id_users)
-                            <input type="text" class="form-control" value="{{$users->name}}" readonly>
-                        @endif
-                    @endforeach
+                    <label for="exampleInputEmail1">Encargado Previo Sede</label>
+                        @foreach($user as $users)
+                            @if($users->id == $sede->id_users)
+                                <input type="text" class="form-control" value="{{$users->name}}">
+                            @endif
+                        @endforeach
 
+                </div>
                 <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Encargado Sede</label>
                     <select name="encargado" class="form-control">
