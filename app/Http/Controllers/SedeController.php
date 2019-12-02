@@ -96,15 +96,18 @@ class SedeController extends Controller
      */
     public function update(Request $request, sede $sede)
     {
-        $sede->nombre_sede = $request->input('nombre_sede');
-        $sede->direccion_sede = $request->input('direccion_sede');
-        $sede->id_users = $request->input('encargado');
-        $sede->id_estado = $request->input('estado');
-        $sede->save();
+        $sedes=$sede;
+        $sedes->nombre_sede = $request->input('nombre_sede');
+        $sedes->direccion_sede = $request->input('direccion_sede');
+        $sedes->id_users = $request->input('encargado');
+        $sedes->id_estado = $request->input('estado');
+        $sedes->save();
 
-        $estado = estado::all();
-        $user = User::all()->where('id_tipo','=',1);
-        return view('sede.create',compact('user','estado'));
+        $sede = DB::table('sedes')
+            ->join('users', 'users.id', '=', 'sedes.id_users')
+            ->select('sedes.id_sede', 'sedes.nombre_sede','sedes.direccion_sede','users.name')
+            ->get();
+        return view('sede.index',compact('sede'));
     }
 
     /**
