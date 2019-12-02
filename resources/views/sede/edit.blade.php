@@ -46,6 +46,7 @@
                             @if($users->id == $sede->id_users)
                                 <option value="{{$users->id}}"> Encargado previo {{$users->name}}</option>
                             @endif
+                                <option>---------------------------------------------</option>
                         @endforeach
                         @foreach($user as $users)
                                 <option value="{{$users->id}}">{{$users->name}}</option>
@@ -55,6 +56,12 @@
                 <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Estado Sede</label>
                     <select name="estado" class="form-control">
+                        @foreach($estado as $estados)
+                            @if($estados->id_estado == $sede->id_estado)
+                                <option value="{{$estados->id_estado}}">Estado Previo {{$estados->descripcion}}</option>
+                            @endif
+                            <option>---------------------------------------------</option>
+                        @endforeach
                         @foreach($estado as $estados)
                             <option value="{{$estados->id_estado}}">{{$estados->descripcion}}</option>
                         @endforeach
