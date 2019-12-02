@@ -46,8 +46,8 @@
                             @if($users->id == $sede->id_users)
                                 <option value="{{$users->id}}"> Encargado previo {{$users->name}}</option>
                             @endif
-                                <option>---------------------------------------------</option>
                         @endforeach
+                            <option>---------------------------------------------</option>
                         @foreach($user as $users)
                                 <option value="{{$users->id}}">{{$users->name}}</option>
                         @endforeach
@@ -60,8 +60,8 @@
                             @if($estados->id_estado == $sede->id_estado)
                                 <option value="{{$estados->id_estado}}">Estado Previo {{$estados->descripcion}}</option>
                             @endif
-                            <option>---------------------------------------------</option>
                         @endforeach
+                            <option>---------------------------------------------</option>
                         @foreach($estado as $estados)
                             <option value="{{$estados->id_estado}}">{{$estados->descripcion}}</option>
                         @endforeach
