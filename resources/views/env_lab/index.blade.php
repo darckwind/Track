@@ -5,7 +5,7 @@
     <div class="container">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Vista general Laboratorios</h2>
+                <h2>Vista general envios Laboratorios</h2>
             </div>
         </div>
         <table class="table table-responsive-sm">
@@ -23,7 +23,13 @@
                 <td>s</td>
                 <td>s</td>
                 <td>
-                    1
+                    <form action="{{ route('envlab.destroy',$envio->id_env_lab) }}" method="POST">
+                        <a class="btn btn-warning" href="{{ route('lab.edit',$envio->id_env_lav) }}">edit</a>
+                        <!--selector multiples edicion de datos-->
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
                 </td>
             </tr>
         </table>

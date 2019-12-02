@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\envio_lab;
+use App\laboratorio;
+use App\sede;
 use Illuminate\Http\Request;
 
 class EnvioLabController extends Controller
@@ -24,7 +26,10 @@ class EnvioLabController extends Controller
      */
     public function create()
     {
-        //
+        $sede = sede::all();
+        $lab = laboratorio::all();
+
+        return view('encargados.create',compact('sede','lab'));
     }
 
     /**
