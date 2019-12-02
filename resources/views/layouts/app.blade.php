@@ -59,6 +59,21 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Infraestructura
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{route('envlab.index')}}">Vista General Envios Laboratorios</a>
+                                <a class="dropdown-item" href="{{route('envlab.create')}}">Nuevo Envio Laboratorio </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Vista General Envios Sedes</a>
+                                <a class="dropdown-item" href="#">Nuevo Envio Sede </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Vista General Envio CEO</a>
+                                <a class="dropdown-item" href="#">Nuevo Envio CEO </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 RRHH
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">

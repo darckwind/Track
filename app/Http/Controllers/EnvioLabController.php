@@ -14,7 +14,7 @@ class EnvioLabController extends Controller
      */
     public function index()
     {
-        //
+        return view('env_lab.index');
     }
 
     /**
