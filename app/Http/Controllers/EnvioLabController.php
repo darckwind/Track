@@ -29,7 +29,7 @@ class EnvioLabController extends Controller
         $sede = sede::all();
         $lab = laboratorio::all();
 
-        return view('encargados.create',compact('sede','lab'));
+        return view('env_lab.create',compact('sede','lab'));
     }
 
     /**
