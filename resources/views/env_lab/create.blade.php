@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
-            <form action="{{ route('envlab.store') }}" method="POST">
+        <form action="{{ route('envlab.store') }}" method="POST">
+            <div class="row">
                 @csrf
                 <div class="col-md-6">
                     <label for="exampleInputEmail1">Sede</label>
@@ -34,7 +34,7 @@
                     <input type="number" class="form-control" name="cantidad" min="0">
                 </div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
-            </form>
-        </div>
+            </div>
+        </form>
     </div>
 @endsection
