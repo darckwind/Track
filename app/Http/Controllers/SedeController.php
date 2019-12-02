@@ -107,9 +107,11 @@ class SedeController extends Controller
     {
         $sede->delete();
 
-        $estado = estado::all();
-        $user = User::all()->where('id_tipo','=',1);
-        return view('sede.create',compact('user','estado'));
+        $sede = DB::table('sedes')
+            ->join('users', 'users.id', '=', 'sedes.id_users')
+            ->select('sedes.id_sede', 'sedes.nombre_sede','sedes.direccion_sede','users.name')
+            ->get();
+        return view('sede.index',compact('sede'));
 
     }
 }
