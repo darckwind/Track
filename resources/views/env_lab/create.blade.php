@@ -33,7 +33,7 @@
                     <label for="exampleInputEmail1">Cantidad</label>
                     <input type="number" class="form-control" name="cantidad" min="0">
                 </div>
-                <button type="submit" class="btnbtn-primary">Guardar</button>
+                <button type="submit" class="btn btn-primary">Guardar</button>
             </div>
         </form>
     </div>
