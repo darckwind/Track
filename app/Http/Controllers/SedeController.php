@@ -80,9 +80,9 @@ class SedeController extends Controller
     public function edit(sede $sede)
     {
         //die($sede);
-        $encargado = User::find($sede->id_user);
+        $estado = estado::all();
         $user = User::all()->where('id_tipo','=',1);
-        return view('sede.edit',compact('user','sede'));
+        return view('sede.edit',compact('user','sede'))->with(compact('estado'));
     }
 
     /**
