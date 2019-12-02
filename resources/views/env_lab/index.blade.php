@@ -19,7 +19,7 @@
             @foreach($enviado as $envs)
                 <tr>
                     <td>{{$envs->nombre_lab}}</td>
-                    <td>{{$envs->descripcion}}</td>
+                    <td>{{$envs->description}}</td>
                     <td>{{$envs->cantidad}}</td>
                     <td>{{$envs->createat}}</td>
                     <td>
