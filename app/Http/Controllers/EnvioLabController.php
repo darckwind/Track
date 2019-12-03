@@ -87,7 +87,10 @@ class EnvioLabController extends Controller
     public function edit($envio_lab)
     {
         $envio = envio_lab::find($envio_lab);
-        die($envio);
+        $lab = laboratorio::all();
+        $item = item::all();
+
+        return view('env_lab.edit',compact('item','lab'))->with(compact('envio'));
     }
 
     /**
