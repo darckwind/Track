@@ -109,7 +109,7 @@ class EnvioLabController extends Controller
      */
     public function destroy(envio_lab $envio_lab)
     {
-        $envio_lab->delete();
+        dd($envio_lab);
 
         $enviado = DB::table('envio_labs')
             ->join('laboratorios', 'laboratorios.id_laboratorio', '=', 'envio_labs.id_laboratorio')
