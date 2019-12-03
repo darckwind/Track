@@ -96,9 +96,11 @@ class EnvioLabController extends Controller
      * @param  \App\envio_lab  $envio_lab
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, envio_lab $envio_lab)
+    public function update(Request $request, $envio_lab)
     {
-        //
+        $envio = envio_lab::find($envio_lab);
+        die($envio);
+
     }
 
     /**
