@@ -86,7 +86,8 @@ class EnvioLabController extends Controller
      */
     public function edit(envio_lab $envio_lab)
     {
-        //
+        $envio = envio_lab::find($envio_lab);
+        die($envio);
     }
 
     /**
@@ -98,8 +99,7 @@ class EnvioLabController extends Controller
      */
     public function update(Request $request, $envio_lab)
     {
-        $envio = envio_lab::find($envio_lab);
-        die($envio);
+
 
     }
 

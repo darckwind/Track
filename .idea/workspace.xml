@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dff3ce6b-8c27-4a51-8d7f-5b227e82bec1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/envio_lab.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/envio_lab.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="109" column="38" lean-forward="true" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
+            <state relative-caret-position="318">
+              <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -347,28 +347,7 @@
       <updated>1574774873965</updated>
       <workItem from="1574774877519" duration="16021000" />
       <workItem from="1574946969666" duration="30467000" />
-      <workItem from="1575323724834" duration="1904000" />
-    </task>
-    <task id="LOCAL-00118" summary="seeder estados y desvinculacion con tipos">
-      <created>1575293644937</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1575293644937</updated>
-    </task>
-    <task id="LOCAL-00119" summary="seeder estados y desvinculacion con tipos">
-      <created>1575294179886</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1575294179886</updated>
-    </task>
-    <task id="LOCAL-00120" summary="seeder estados y desvinculacion con tipos">
-      <created>1575294257992</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1575294257992</updated>
+      <workItem from="1575323724834" duration="2350000" />
     </task>
     <task id="LOCAL-00121" summary="seeder estados y desvinculacion con tipos">
       <created>1575294336270</created>
@@ -692,17 +671,38 @@
       <option name="project" value="LOCAL" />
       <updated>1575404793095</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="index envios lab">
+      <created>1575404935856</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1575404935856</updated>
+    </task>
+    <task id="LOCAL-00168" summary="index envios lab">
+      <created>1575405011810</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1575405011810</updated>
+    </task>
+    <task id="LOCAL-00169" summary="index envios lab">
+      <created>1575405051886</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1575405051886</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48392000" />
+    <option name="totallyTimeSpent" value="48838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="32" width="1366" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22885196" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22885196" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -718,7 +718,7 @@
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32924962" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.32924962" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32924962" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.2234957" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.2234957" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1083,8 +1083,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="109" column="38" lean-forward="true" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
+        <state relative-caret-position="318">
+          <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
         </state>
       </provider>
     </entry>
