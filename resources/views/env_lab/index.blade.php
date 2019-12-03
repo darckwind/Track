@@ -23,8 +23,8 @@
                     <td>{{$envs->cantidad}}</td>
 
                     <td>
-                        <form action="{{ route('enc.destroy',$envs->id_env_lab) }}" method="POST">
-                            <a class="btn btn-warning" href="{{ route('enc.edit',$envs->id_env_lab) }}">edit</a>
+                        <form action="{{ route('envlab.destroy',$envs->id_env_lab) }}" method="POST">
+                            <a class="btn btn-warning" href="{{ route('envlab.edit',$envs->id_env_lab) }}">edit</a>
                             <!--selector multiples edicion de datos-->
                             @csrf
                             @method('DELETE')
