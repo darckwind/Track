@@ -2,13 +2,18 @@
 
 @section('content')
     <div class="container">
-        {{$envio}}
-        <form action="{{ route('envlab.update') }}" method="POST">
+
+        <form action="{{ route('envlab.update',$envio->id_env_lab) }}" method="POST">
             <div class="row">
                 @csrf
                 <div class="col-md-4">
                     <label for="exampleInputEmail1">Laboratorio</label>
                     <select name="lab" class="form-control">
+                        @foreach($lab as $labs)
+                            @if($labs->id_laboratorio == $envio->id_laboratorio)
+                                <option value="{{$labs->id_laboratorio}}">Laboratorio Previo{{$labs->nombre_lab}}</option>
+                            @endif
+                        @endforeach
                         @foreach($lab as $labs)
                             <option value="{{$labs->id_laboratorio}}">{{$labs->nombre_lab}}</option>
                         @endforeach
