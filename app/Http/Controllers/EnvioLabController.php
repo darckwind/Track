@@ -103,6 +103,7 @@ class EnvioLabController extends Controller
     public function update(Request $request, $envio_lab)
     {
 
+        $envio = envio_lab::find($envio_lab);
 
     }
 
