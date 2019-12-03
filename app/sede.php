@@ -10,4 +10,9 @@ class sede extends Model
         'id_sede','nombre_sede','id_user','direccion_sede'
     ];
     protected $primaryKey = 'id_sede';
+
+    public function envio_sede()
+    {
+        return $this->belongsTo('App\envio_sede');
+    }
 }

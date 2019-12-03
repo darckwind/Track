@@ -10,4 +10,9 @@ class laboratorio extends Model
         'id_laboratorio','nombre_lab'
     ];
     protected $primaryKey = 'id_laboratorio';
+
+    public function envio_sede()
+    {
+        return $this->belongsTo('App\envio_sede');
+    }
 }
