@@ -104,7 +104,18 @@ class EnvioLabController extends Controller
     {
 
         $envio = envio_lab::find($envio_lab);
+        $envio->id_item = $request->input('item');
+        $envio->id_laboratorio = $request->input('lab');
+        $envio->cantidad = $request->input('cantidad');
+        $envio->save();
 
+        $enviado = DB::table('envio_labs')
+            ->join('laboratorios', 'laboratorios.id_laboratorio', '=', 'envio_labs.id_laboratorio')
+            ->join('items', 'items.id_item', '=', 'envio_labs.id_item')
+            ->select('envio_labs.id_env_lab','envio_labs.cantidad', 'items.description','laboratorios.nombre_lab')
+            ->get();
+
+        return view('env_lab.index',compact('enviado'));
     }
 
     /**
