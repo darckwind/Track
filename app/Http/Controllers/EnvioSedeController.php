@@ -14,7 +14,7 @@ class EnvioSedeController extends Controller
      */
     public function index()
     {
-        //
+        return view('env_sede.index');
     }
 
     /**
