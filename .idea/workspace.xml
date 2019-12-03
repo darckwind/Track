@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dff3ce6b-8c27-4a51-8d7f-5b227e82bec1" name="Default Changelist" comment="" />
+    <list default="true" id="dff3ce6b-8c27-4a51-8d7f-5b227e82bec1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/envio_lab.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/envio_lab.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,16 +15,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="111" column="29" lean-forward="true" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
+            <state relative-caret-position="210">
+              <caret line="109" column="38" lean-forward="true" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/envio_lab.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/env_lab/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -100,10 +111,10 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/lab/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/app/envio_lab.php" />
         <option value="$PROJECT_DIR$/resources/views/env_lab/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php" />
         <option value="$PROJECT_DIR$/resources/views/env_lab/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/envio_lab.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php" />
       </list>
     </option>
   </component>
@@ -336,21 +347,7 @@
       <updated>1574774873965</updated>
       <workItem from="1574774877519" duration="16021000" />
       <workItem from="1574946969666" duration="30467000" />
-      <workItem from="1575323724834" duration="1663000" />
-    </task>
-    <task id="LOCAL-00116" summary="seeder estados y desvinculacion con tipos">
-      <created>1575292350342</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1575292350342</updated>
-    </task>
-    <task id="LOCAL-00117" summary="seeder estados y desvinculacion con tipos">
-      <created>1575292417796</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1575292417796</updated>
+      <workItem from="1575323724834" duration="1904000" />
     </task>
     <task id="LOCAL-00118" summary="seeder estados y desvinculacion con tipos">
       <created>1575293644937</created>
@@ -681,16 +678,31 @@
       <option name="project" value="LOCAL" />
       <updated>1575404663028</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="index envios lab">
+      <created>1575404716674</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1575404716674</updated>
+    </task>
+    <task id="LOCAL-00166" summary="index envios lab">
+      <created>1575404793095</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1575404793095</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48151000" />
+    <option name="totallyTimeSpent" value="48392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="32" width="1366" height="768" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22885196" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22885196" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -706,7 +718,7 @@
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32924962" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.32924962" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32924962" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.2234957" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.2234957" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1010,13 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/envio_lab.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/env_lab/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1062,17 +1067,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="111" column="29" lean-forward="true" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/env_lab/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/envio_lab.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="109" column="38" lean-forward="true" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
         </state>
       </provider>
     </entry>
