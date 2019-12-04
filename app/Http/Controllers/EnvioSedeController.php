@@ -91,9 +91,20 @@ class EnvioSedeController extends Controller
      * @param  \App\envio_sede  $envio_sede
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, envio_sede $envio_sede)
+    public function update(Request $request, $envio_sede)
     {
-        //
+        $request->validate([
+            'lab' => 'required',
+            'sede' => 'required'
+        ]);
+
+        $env_sede = envio_sede::find($envio_sede);
+        $env_sede->id_sede = $request->input('sede');
+        $env_sede->id_laboratorio = $request->input('lab');
+        $env_sede->save();
+
+        return redirect()->route('envsede.index');
+
     }
 
     /**
