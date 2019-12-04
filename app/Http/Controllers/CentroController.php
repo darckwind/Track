@@ -102,7 +102,24 @@ class CentroController extends Controller
      */
     public function update(Request $request, centro $centro)
     {
-        //
+        $request->validate([
+            'nombre_centro' => 'required',
+            'region_centro' => 'required',
+            'comuna_centro' => 'required',
+            'direccion_centro' => 'required',
+            'encargado' => 'required',
+            'estado' => 'required'
+        ]);
+
+        $centro->nombre_centro = $request->input('nombre_centro');
+        $centro->region_centro = $request->input('region_centro');
+        $centro->comuna_centro = $request->input('comuna_centro');
+        $centro->direccion_centro = $request->input('direccion_centro');
+        $centro->id_users = $request->input('encargado');
+        $centro->id_estado = $request->input('estado');
+        $centro->save();
+
+        eturn redirect()->route('centro.index');
     }
 
     /**
