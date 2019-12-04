@@ -17,6 +17,13 @@ class Planillas extends Controller
             ->select('envio_labs.id_env_lab','envio_labs.cantidad', 'items.description','laboratorios.nombre_lab')
             ->get();
 
-        return view('etiqueta.etiqueta',compact('lab'));
+        $test = Array();
+
+        foreach ($lab as $labs) {
+            $test["laboratorio"]=$labs->nombre_lab;
+
+        }
+
+        return view('etiqueta.etiqueta',compact('test'));
     }
 }
