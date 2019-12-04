@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\envio_lab;
 use App\laboratorio;
+use App\sede;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -21,5 +22,17 @@ class Planillas extends Controller
 
 
         return view('etiqueta.etiqueta',compact('lab','labora'));
+    }
+
+    public function sede()
+    {
+        $lab = DB::table('envio_sedes')
+            ->join('laboratorios', 'laboratorios.id_laboratorio', '=', 'envio_sedes.id_laboratorio')
+            ->join('sedes', 'sedes.id_sede', '=', 'envio_sedes.id_sede')
+            ->select('envio_sedes.id_env_sede', 'sedes.nombre_sede','laboratorios.nombre_lab','sedes.id_sede')
+            ->get();
+        $sede = sede::all();
+
+        return view('etiqueta.etiqueta',compact('lab','sede'));
     }
 }
