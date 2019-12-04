@@ -99,8 +99,9 @@ class EnvioSedeController extends Controller
      * @param  \App\envio_sede  $envio_sede
      * @return \Illuminate\Http\Response
      */
-    public function destroy(envio_sede $envio_sede)
+    public function destroy($envio_sede)
     {
-        //
+        $destroy = envio_sede::find($envio_sede);
+        die($destroy);
     }
 }
