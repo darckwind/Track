@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\envio_sede;
+use App\laboratorio;
+use App\sede;
 use Illuminate\Http\Request;
 
 class EnvioSedeController extends Controller
@@ -24,7 +26,9 @@ class EnvioSedeController extends Controller
      */
     public function create()
     {
-        //
+        $lab = laboratorio::all();
+        $sede = sede::all();
+        return view('env_sede.create',compact('lab','sede'));
     }
 
     /**
