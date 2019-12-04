@@ -26,3 +26,7 @@ Route::resource('/envlab','EnvioLabController');
 Route::resource('/envsede','EnvioSedeController');
 Route::resource('/envceo','EnvioCentroController');
 Route::resource('/centro','CentroController');
+
+//test
+
+Route::get('etiqueta/lab','Planilla@laboratorio');
