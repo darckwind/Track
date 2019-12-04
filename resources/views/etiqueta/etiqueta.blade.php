@@ -16,7 +16,7 @@
 <div class="row">
     @foreach($labora as $labs)
         <div class="col-md-6">
-            <table>
+            <table class="table">
                 <tr>
                     <th>Laboratorio</th>
                 </tr>
@@ -24,7 +24,7 @@
                     <td>{{$labs->nombre_lab}}</td>
                 </tr>
             </table>
-            <table>
+            <table class="table">
                 <tr>
                     <th>Instrumento</th>
                     <th>cantidad</th>

@@ -42,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/etiqueta/etiqueta.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            <state relative-caret-position="99">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -350,35 +350,7 @@
       <workItem from="1574774877519" duration="16021000" />
       <workItem from="1574946969666" duration="30467000" />
       <workItem from="1575323724834" duration="9359000" />
-      <workItem from="1575462560447" duration="13575000" />
-    </task>
-    <task id="LOCAL-00181" summary="index envios lab">
-      <created>1575427082068</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1575427082068</updated>
-    </task>
-    <task id="LOCAL-00182" summary="index envios lab">
-      <created>1575427421643</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1575427421643</updated>
-    </task>
-    <task id="LOCAL-00183" summary="index envios lab">
-      <created>1575427459256</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1575427459256</updated>
-    </task>
-    <task id="LOCAL-00184" summary="index envios lab">
-      <created>1575427536382</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1575427536382</updated>
+      <workItem from="1575462560447" duration="14304000" />
     </task>
     <task id="LOCAL-00185" summary="index envios lab">
       <created>1575427594228</created>
@@ -695,11 +667,39 @@
       <option name="project" value="LOCAL" />
       <updated>1575492124180</updated>
     </task>
-    <option name="localTasksCounter" value="230" />
+    <task id="LOCAL-00230" summary="creacion centros">
+      <created>1575492292627</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1575492292627</updated>
+    </task>
+    <task id="LOCAL-00231" summary="creacion centros">
+      <created>1575492358973</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1575492358973</updated>
+    </task>
+    <task id="LOCAL-00232" summary="creacion centros">
+      <created>1575492439417</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1575492439417</updated>
+    </task>
+    <task id="LOCAL-00233" summary="creacion centros">
+      <created>1575492969285</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1575492969285</updated>
+    </task>
+    <option name="localTasksCounter" value="234" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69422000" />
+    <option name="totallyTimeSpent" value="70151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1128,8 +1128,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/etiqueta/etiqueta.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state relative-caret-position="99">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
         </state>
       </provider>
     </entry>
