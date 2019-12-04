@@ -16,8 +16,8 @@ class CentroController extends Controller
      */
     public function index()
     {
-
-        return view('centro.index');
+        $todo = centro::all();
+        return view('centro.index', compact('todo'));
         //return redirect()->route('envsede.index');
     }
 
@@ -41,8 +41,25 @@ class CentroController extends Controller
      */
     public function store(Request $request)
     {
-        //id_centro,nombre_centro,direccion_centro,region_centro,comuna_centro,id_users,id_estado
+        $request->validate([
+            'nombre_centro' => 'required',
+            'region_centro' => 'required',
+            'comuna_centro' => 'required',
+            'direccion_centro' => 'required',
+            'encargado' => 'required',
+            'estado' => 'required'
+        ]);
 
+        $centro =  new centro();
+        $centro->nombre_centro = $request->input('nombre_centro');
+        $centro->region_centro = $request->input('region_centro');
+        $centro->comuna_centro = $request->input('comuna_centro');
+        $centro->direccion_centro = $request->input('direccion_centro');
+        $centro->id_users = $request->input('encargado');
+        $centro->id_estado = $request->input('estado');
+        $centro->save();
+
+        return redirect()->route('centro.create');
     }
 
     /**

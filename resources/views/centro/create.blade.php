@@ -3,7 +3,6 @@
     <div class="container">
         <form action="{{ route('centro.store') }}" method="post">
             @csrf
-            region_centro,comuna_centro
             <div class="row">
                 <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Nombre Centro</label>
@@ -21,7 +20,7 @@
                     <label for="exampleInputEmail1">Direccion Centro</label>
                     <input type="text" class="form-control" name="direccion_centro">
                 </div>
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Encargado Centro</label>
                     <select name="encargado" class="form-control">
                         @foreach($user as $users)
@@ -29,8 +28,8 @@
                         @endforeach
                     </select>
                 </div>
-                <div class="form-group col-md-3">
-                    <label for="exampleInputEmail1">Estado Sede</label>
+                <div class="form-group col-md-6">
+                    <label for="exampleInputEmail1">Estado Centro</label>
                     <select name="estado" class="form-control">
                         @foreach($estado as $estados)
                             <option value="{{$estados->id_estado}}">{{$estados->descripcion}}</option>
