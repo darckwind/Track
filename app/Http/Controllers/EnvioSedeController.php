@@ -39,7 +39,7 @@ class EnvioSedeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        die($request);
     }
 
     /**
