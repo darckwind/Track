@@ -26,8 +26,8 @@
                 <tr>
                     <td>{{$sedes->nombre_sede}}</td>
                     <td>{{$sedes->direccion_sede}}</td>
-                    <td>{{$sedes->id_user}}</td>
-                    <td>{{$sedes->id_user}}</td>
+                    <td>{{$sedes->id_users}}</td>
+                    <td>{{$sedes->id_users}}</td>
                 </tr>
             </table>
             <table class="table">
