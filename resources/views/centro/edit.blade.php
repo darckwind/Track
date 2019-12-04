@@ -35,7 +35,7 @@
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="exampleInputEmail1">Estado Centro {{$centro}}</label>
+                    <label for="exampleInputEmail1">Estado Centro {{$centro->id_estado}}</label>
                     <select name="estado" class="form-control">
                         @foreach($estado as $estados)
                             @if($estados->id_estados == $centro->id_estado)
