@@ -1,7 +1,19 @@
+<stytle>
+    table {
+    border-collapse: collapse;
+    }
+
+    table, th, td {
+    border: 1px solid black;
+    }
+</stytle>
+
 @foreach($lab as $labs)
     <table>
         <tr>
-            <td>Laboratorio</td>
+            <th>Laboratorio</th>
+        </tr>
+        <tr>
             <td>{{$labs->nombre_lab}}</td>
         </tr>
     </table>
