@@ -102,6 +102,13 @@ class EnvioSedeController extends Controller
     public function destroy($envio_sede)
     {
         $destroy = envio_sede::find($envio_sede);
-        die($destroy);
+        $destroy->delete();
+
+        $enviado = DB::table('envio_sedes')
+            ->join('laboratorios', 'laboratorios.id_laboratorio', '=', 'envio_sedes.id_laboratorio')
+            ->join('sedes', 'sedes.id_sede', '=', 'envio_sedes.id_sede')
+            ->select('envio_sedes.id_env_sede', 'sedes.nombre_sede','laboratorios.nombre_lab')
+            ->get();
+        return view('env_sede.index',compact('enviado'));
     }
 }
