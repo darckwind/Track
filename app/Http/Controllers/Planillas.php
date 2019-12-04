@@ -33,6 +33,6 @@ class Planillas extends Controller
             ->get();
         $sede = sede::all();
 
-        return view('etiqueta.etiqueta',compact('lab','sede'));
+        return view('etiqueta.sede',compact('lab','sede'));
     }
 }
