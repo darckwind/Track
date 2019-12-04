@@ -8,7 +8,8 @@
     }
 </style>
 
-@foreach($lab as $labs)
+@foreach($labora as $labs)
+<div class="col-md-auto">
     <table>
         <tr>
             <th>Laboratorio</th>
@@ -23,11 +24,14 @@
             <th>cantidad</th>
         </tr>
         @foreach($lab as $labss)
-            <tr>
-                <td>{{$labss->description}}</td>
-                <td>{{$labss->cantidad}}</td>
-            </tr>
+            @if($labs->id_laboratorio==$labss->id_laboratorio)
+                <tr>
+                    <td>{{$labss->description}}</td>
+                    <td>{{$labss->cantidad}}</td>
+                </tr>
+            @endif
         @endforeach
     </table>
+</div>
 @endforeach
 

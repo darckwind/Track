@@ -14,10 +14,12 @@ class Planillas extends Controller
         $lab = DB::table('envio_labs')
             ->join('laboratorios', 'laboratorios.id_laboratorio', '=', 'envio_labs.id_laboratorio')
             ->join('items', 'items.id_item', '=', 'envio_labs.id_item')
-            ->select('envio_labs.id_env_lab','envio_labs.cantidad', 'items.description','laboratorios.nombre_lab')
+            ->select('envio_labs.id_env_lab','envio_labs.cantidad', 'items.description','laboratorios.nombre_lab','envio_labs.id_laboratorio')
             ->get();
 
+        $labora = laboratorio::all();
 
-        return view('etiqueta.etiqueta',compact('lab'));
+
+        return view('etiqueta.etiqueta',compact('lab','labora'));
     }
 }
