@@ -11,7 +11,7 @@
                     <label for="exampleInputEmail1">Sede</label>
                     <select name="lab" class="form-control">
                         @foreach($sede as $sedes)
-                            <option value="{{$sedes->id_sede}}">{{$labs->nombre_sede}}</option>
+                            <option value="{{$sedes->id_sede}}">{{$sedes->nombre_sede}}</option>
                         @endforeach
                     </select>
                 </div>
