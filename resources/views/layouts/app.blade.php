@@ -65,8 +65,8 @@
                                 <a class="dropdown-item" href="{{route('envlab.index')}}">Vista General Envios Laboratorios</a>
                                 <a class="dropdown-item" href="{{route('envlab.create')}}">Nuevo Envio Laboratorio </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="{{'envsede.index'}}">Vista General Envios Sedes</a>
-                                <a class="dropdown-item" href="{{'envsede.create'}}">Nuevo Envio Sede </a>
+                                <a class="dropdown-item" href="{{route('envsede.index')}}">Vista General Envios Sedes</a>
+                                <a class="dropdown-item" href="{{route('envsede.create'}}">Nuevo Envio Sede </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Vista General Envio CEO</a>
                                 <a class="dropdown-item" href="#">Nuevo Envio CEO </a>
