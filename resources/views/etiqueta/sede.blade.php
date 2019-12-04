@@ -19,9 +19,15 @@
             <table class="table">
                 <tr>
                     <th>Sede</th>
+                    <th>Direccion</th>
+                    <th>Encargado</th>
+                    <th>Telefono</th>
                 </tr>
                 <tr>
                     <td>{{$sedes->nombre_sede}}</td>
+                    <td>{{$sedes->direccion_sede}}</td>
+                    <td>{{$sedes->id_user}}</td>
+                    <td>{{$sedes->id_user}}</td>
                 </tr>
             </table>
             <table class="table">
