@@ -20,7 +20,7 @@ class CentroController extends Controller
         $todo = DB::table('centros')
             ->join('users', 'users.id', '=', 'centros.id_users')
             ->join('estados', 'estados.id_estado', '=', 'centros.id_estado')
-            ->select('centros.id_sede', 'centros.nombre_centro','centros.direccion_centro','centros.region_centro','centros.comuna_centro','users.name','estados.descripcion')
+            ->select('centros.id_centro', 'centros.nombre_centro','centros.direccion_centro','centros.region_centro','centros.comuna_centro','users.name','estados.descripcion')
             ->get();
         return view('centro.index', compact('todo'));
         //return redirect()->route('envsede.index');
