@@ -16,7 +16,8 @@ class EnvioSedeController extends Controller
      */
     public function index()
     {
-        return view('env_sede.index');
+        $envio = envio_sede::all();
+        return view('env_sede.index',compact('envio'));
     }
 
     /**
@@ -39,7 +40,13 @@ class EnvioSedeController extends Controller
      */
     public function store(Request $request)
     {
-        die($request);
+        $env_sede = new envio_sede();
+        $env_sede->id_sede = $request->input('sede');
+        $env_sede->id_laboratorio = $request->input('lab');
+        $env_sede->save();
+
+        $envio = envio_sede::all();
+        return view('env_sede.index',compact('envio'));
     }
 
     /**
