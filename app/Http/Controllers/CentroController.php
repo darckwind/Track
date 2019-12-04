@@ -119,7 +119,7 @@ class CentroController extends Controller
         $centro->id_estado = $request->input('estado');
         $centro->save();
 
-        eturn redirect()->route('centro.index');
+        return redirect()->route('centro.index');
     }
 
     /**
