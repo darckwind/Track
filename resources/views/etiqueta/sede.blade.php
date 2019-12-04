@@ -22,12 +22,14 @@
                     <th>Direccion</th>
                     <th>Encargado</th>
                     <th>Telefono</th>
+                    <th>Email</th>
                 </tr>
                 <tr>
                     <td>{{$sedes->nombre_sede}}</td>
                     <td>{{$sedes->direccion_sede}}</td>
-                    <td>{{$sedes->id_users}}</td>
+                    <td>{{\App\User::find($sedes->id_users)->name}}</td>
                     <td>{{\App\User::find($sedes->id_users)->telefono_enc}}</td>
+                    <td>{{\App\User::find($sedes->id_users)->email}}</td>
                 </tr>
             </table>
             <table class="table">
