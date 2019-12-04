@@ -17,8 +17,7 @@ class Planillas extends Controller
             ->select('envio_labs.id_env_lab','envio_labs.cantidad', 'items.description','laboratorios.nombre_lab')
             ->get();
 
-        die($lab);
 
-        return view('etiqueta.etiqueta',compact('test'));
+        return view('etiqueta.etiqueta',compact('lab'));
     }
 }
