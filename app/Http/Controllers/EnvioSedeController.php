@@ -40,6 +40,11 @@ class EnvioSedeController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'lab' => 'required',
+            'sede' => 'required'
+        ]);
+
         $env_sede = new envio_sede();
         $env_sede->id_sede = $request->input('sede');
         $env_sede->id_laboratorio = $request->input('lab');
