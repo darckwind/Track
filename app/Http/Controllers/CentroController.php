@@ -86,7 +86,7 @@ class CentroController extends Controller
      */
     public function edit(centro $centro)
     {
-        //
+        die($centro);
     }
 
     /**
