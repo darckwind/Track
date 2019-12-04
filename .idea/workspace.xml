@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dff3ce6b-8c27-4a51-8d7f-5b227e82bec1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/etiqueta/etiqueta.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/etiqueta/etiqueta.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Planillas.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="86" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="86" />
+              <caret line="16" column="140" selection-start-line="16" selection-start-column="126" selection-end-line="16" selection-end-column="140" />
               <folding>
                 <element signature="e#40#58#0#PHP" expanded="true" />
               </folding>
@@ -43,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/etiqueta/etiqueta.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="291">
+              <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -351,35 +350,7 @@
       <workItem from="1574774877519" duration="16021000" />
       <workItem from="1574946969666" duration="30467000" />
       <workItem from="1575323724834" duration="9359000" />
-      <workItem from="1575462560447" duration="12613000" />
-    </task>
-    <task id="LOCAL-00177" summary="index envios lab">
-      <created>1575407431505</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1575407431505</updated>
-    </task>
-    <task id="LOCAL-00178" summary="index envios lab">
-      <created>1575409533397</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1575409533397</updated>
-    </task>
-    <task id="LOCAL-00179" summary="index envios lab">
-      <created>1575409843606</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1575409843607</updated>
-    </task>
-    <task id="LOCAL-00180" summary="index envios lab">
-      <created>1575409887620</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1575409887620</updated>
+      <workItem from="1575462560447" duration="13575000" />
     </task>
     <task id="LOCAL-00181" summary="index envios lab">
       <created>1575427082068</created>
@@ -696,20 +667,47 @@
       <option name="project" value="LOCAL" />
       <updated>1575490369119</updated>
     </task>
-    <option name="localTasksCounter" value="226" />
+    <task id="LOCAL-00226" summary="creacion centros">
+      <created>1575490701336</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1575490701337</updated>
+    </task>
+    <task id="LOCAL-00227" summary="creacion centros">
+      <created>1575490878119</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1575490878119</updated>
+    </task>
+    <task id="LOCAL-00228" summary="creacion centros">
+      <created>1575490906978</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1575490906978</updated>
+    </task>
+    <task id="LOCAL-00229" summary="creacion centros">
+      <created>1575492124180</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1575492124180</updated>
+    </task>
+    <option name="localTasksCounter" value="230" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68460000" />
+    <option name="totallyTimeSpent" value="69422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49815497" visible="true" weight="0.23263328" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4955595" visible="true" weight="0.23263328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" sideWeight="0.501845" side_tool="true" weight="0.22885196" />
+      <window_info id="Favorites" order="3" sideWeight="0.5044405" side_tool="true" weight="0.23263328" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -1121,7 +1119,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Planillas.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="86" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="86" />
+          <caret line="16" column="140" selection-start-line="16" selection-start-column="126" selection-end-line="16" selection-end-column="140" />
           <folding>
             <element signature="e#40#58#0#PHP" expanded="true" />
           </folding>
@@ -1130,8 +1128,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/etiqueta/etiqueta.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        <state relative-caret-position="291">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
         </state>
       </provider>
     </entry>

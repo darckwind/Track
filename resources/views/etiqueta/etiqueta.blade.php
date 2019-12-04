@@ -18,6 +18,7 @@
             <td>{{$labs->nombre_lab}}</td>
         </tr>
     </table>
+    <br>
     <table>
         <tr>
             <th>Instrumento</th>
