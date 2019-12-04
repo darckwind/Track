@@ -87,6 +87,9 @@ class CentroController extends Controller
     public function edit(centro $centro)
     {
 
+        $estado = estado::all();
+        $user = User::all()->where('id_tipo','=',2);
+        return view('centro.edit',compact('user','estado'))->with(compact('centro'));
 
     }
 
