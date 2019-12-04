@@ -27,7 +27,7 @@
                     <td>{{$sedes->nombre_sede}}</td>
                     <td>{{$sedes->direccion_sede}}</td>
                     <td>{{$sedes->id_users}}</td>
-                    <td>{{\App\User::find($sedes->id_users)}}</td>
+                    <td>{{\App\User::find($sedes->id_users)->telefono_enc}}</td>
                 </tr>
             </table>
             <table class="table">
