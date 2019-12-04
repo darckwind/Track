@@ -24,3 +24,5 @@ Route::resource('/sede','SedeController');
 Route::resource('/enc','Encargado');
 Route::resource('/envlab','EnvioLabController');
 Route::resource('/envsede','EnvioSedeController');
+Route::resource('/envceo','EnvioCentroController');
+Route::resource('/centro','CentroController');

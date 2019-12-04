@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\centro;
+use App\estado;
+use App\User;
 use Illuminate\Http\Request;
 
 class CentroController extends Controller
@@ -14,7 +16,9 @@ class CentroController extends Controller
      */
     public function index()
     {
-        //
+
+        return view('centro.index');
+        //return redirect()->route('envsede.index');
     }
 
     /**
@@ -24,7 +28,9 @@ class CentroController extends Controller
      */
     public function create()
     {
-        //
+        $estado = estado::all();
+        $user = User::all()->where('id_tipo','=',2);
+        return view('centro.create',compact('user','estado'));
     }
 
     /**
@@ -35,7 +41,8 @@ class CentroController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //id_centro,nombre_centro,direccion_centro,region_centro,comuna_centro,id_users,id_estado
+
     }
 
     /**
