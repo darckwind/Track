@@ -21,6 +21,7 @@
 <div class="row">
     @foreach($sede as $sedes)
         <div class="col-md-6">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://track.devriko.com/sede/{{$sedes->id}}/edit" class="img-thumbnail">
             <table class="table">
                 <tr>
                     <th>Sede</th>
