@@ -36,7 +36,11 @@
                         @endforeach
                     </select>
                 </div>
+                <div class="colmd-12">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
             </div>
+
         </form>
     </div>
 @endsection
