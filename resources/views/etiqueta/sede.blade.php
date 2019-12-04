@@ -26,8 +26,8 @@
             </table>
             <table class="table">
                 <tr>
-                    <th>Instrumento</th>
-                    <th>cantidad</th>
+                    <th>Sede</th>
+                    <th>Laboratorios</th>
                 </tr>
                 @foreach($lab as $labs)
                     @if($labs->id_sede == $sedes->id_sede)
