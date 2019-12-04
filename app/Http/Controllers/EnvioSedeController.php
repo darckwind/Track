@@ -6,6 +6,7 @@ use App\envio_sede;
 use App\laboratorio;
 use App\sede;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class EnvioSedeController extends Controller
 {
@@ -16,8 +17,12 @@ class EnvioSedeController extends Controller
      */
     public function index()
     {
-        $envio = envio_sede::all();
-        return view('env_sede.index',compact('envio'));
+        $enviado = DB::table('envio_sedes')
+            ->join('laboratorios', 'laboratorios.id_laboratorio', '=', 'envio_sedes.id_laboratorio')
+            ->join('sedes', 'sedes.id_sede', '=', 'envio_sedes.id_sede')
+            ->select('envio_sedes.id_env_sede', 'sedes.nombre_sede','laboratorios.nombre_lab')
+            ->get();
+        return view('env_sede.index',compact('enviado'));
     }
 
     /**
