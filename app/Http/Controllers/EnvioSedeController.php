@@ -81,7 +81,7 @@ class EnvioSedeController extends Controller
         $sede = sede::all();
         $envio = envio_sede::find($envio_sede);
 
-        return view('env_sede.create',compact('lab','sede'))->with(compact('envio'));
+        return view('env_sede.edit',compact('lab','sede'))->with(compact('envio'));
     }
 
     /**
