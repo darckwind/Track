@@ -30,3 +30,4 @@ Route::resource('/centro','CentroController');
 //test
 
 Route::get('etiqueta/lab','Planillas@laboratorio');
+Route::get('etiqueta/sede','Planillas@sede');
