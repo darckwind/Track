@@ -1,4 +1,4 @@
-<stytle>
+<style>
     table {
     border-collapse: collapse;
     }
@@ -6,7 +6,7 @@
     table, th, td {
     border: 1px solid black;
     }
-</stytle>
+</style>
 
 @foreach($lab as $labs)
     <table>
