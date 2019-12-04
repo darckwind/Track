@@ -55,8 +55,7 @@ class EnvioSedeController extends Controller
         $env_sede->id_laboratorio = $request->input('lab');
         $env_sede->save();
 
-        $envio = envio_sede::all();
-        return view('env_sede.index',compact('envio'));
+        return redirect()->route('envsede.index');
     }
 
     /**
@@ -104,11 +103,6 @@ class EnvioSedeController extends Controller
         $destroy = envio_sede::find($envio_sede);
         $destroy->delete();
 
-        $enviado = DB::table('envio_sedes')
-            ->join('laboratorios', 'laboratorios.id_laboratorio', '=', 'envio_sedes.id_laboratorio')
-            ->join('sedes', 'sedes.id_sede', '=', 'envio_sedes.id_sede')
-            ->select('envio_sedes.id_env_sede', 'sedes.nombre_sede','laboratorios.nombre_lab')
-            ->get();
-        return view('env_sede.index',compact('enviado'));
+        return redirect()->route('envsede.index');
     }
 }

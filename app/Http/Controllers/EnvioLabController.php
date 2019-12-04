@@ -62,9 +62,7 @@ class EnvioLabController extends Controller
         $envio->save();
 
 
-        $lab = laboratorio::all();
-        $item = item::all();
-        return view('env_lab.create',compact('item','lab'));
+        return redirect()->route('envlab.create');
     }
 
     /**
