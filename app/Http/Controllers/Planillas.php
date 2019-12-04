@@ -10,6 +10,10 @@ use Illuminate\Support\Facades\DB;
 
 class Planillas extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function laboratorio()
     {
         $lab = DB::table('envio_labs')
