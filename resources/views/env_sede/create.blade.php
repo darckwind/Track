@@ -2,8 +2,6 @@
 
 @section('content')
     <div class="container">
-        {{$sede}}
-        {{$lab}}
         <form action="{{ route('envsede.store') }}" method="POST">
             @csrf
             <div class="row">
@@ -22,6 +20,9 @@
                             <option value="{{$labs->id_laboratorio}}">{{$labs->nombre_lab}}</option>
                         @endforeach
                     </select>
+                </div>
+                <div class="col-md-12" style="margin-top: 2%;">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
             </div>
         </form>
