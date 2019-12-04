@@ -46,8 +46,8 @@
                     <th>{{$centros->name}}</th>
                     <th>{{$centros->descripcion}}</th>
                     <td>
-                        <form action="{{ route('sede.destroy',$centros->id_sede) }}" method="POST">
-                            <a class="btn btn-warning" href="{{ route('sede.edit',$centros->id_sede) }}">edit</a>
+                        <form action="{{ route('sede.destroy',$centros->id_centro) }}" method="POST">
+                            <a class="btn btn-warning" href="{{ route('sede.edit',$centros->id_centro) }}">edit</a>
                             <!--selector multiples edicion de datos-->
                             @csrf
                             @method('DELETE')
