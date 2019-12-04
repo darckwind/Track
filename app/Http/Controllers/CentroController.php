@@ -86,7 +86,8 @@ class CentroController extends Controller
      */
     public function edit(centro $centro)
     {
-        die($centro);
+
+
     }
 
     /**
@@ -109,6 +110,7 @@ class CentroController extends Controller
      */
     public function destroy(centro $centro)
     {
-        //
+        $centro->delete();
+        return redirect()->route('centro.index');
     }
 }
