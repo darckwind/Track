@@ -75,9 +75,13 @@ class EnvioSedeController extends Controller
      * @param  \App\envio_sede  $envio_sede
      * @return \Illuminate\Http\Response
      */
-    public function edit(envio_sede $envio_sede)
+    public function edit($envio_sede)
     {
-        //
+        $lab = laboratorio::all();
+        $sede = sede::all();
+        $envio = envio_sede::find($envio_sede);
+
+        return view('env_sede.create',compact('lab','sede'))->with(compact('envio'));
     }
 
     /**
