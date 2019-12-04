@@ -11,7 +11,7 @@
                     <select name="sede" class="form-control">
                         @foreach($sede as $sedes)
                             @if($sedes->id_sede == $envio->id_sede)
-                                <option value="{{$sedes->id_sede}}">{{$sedes->nombre_sede}}</option>
+                                <option value="{{$sedes->id_sede}}">Sede previa {{$sedes->nombre_sede}}</option>
                             @endif
                         @endforeach
                         @foreach($sede as $sedes)
@@ -24,7 +24,7 @@
                     <select name="lab" class="form-control">
                         @foreach($lab as $labs)
                             @if($labs->id_laboratorio == $envio->id_laboratorio)
-                                <option value="{{$labs->id_laboratorio}}">{{$labs->nombre_lab}}</option>
+                                <option value="{{$labs->id_laboratorio}}">Laboratorio previo {{$labs->nombre_lab}}</option>
                             @endif
                         @endforeach
                         @foreach($lab as $labs)
