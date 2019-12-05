@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('../layouts.app')
 
 @section('content')
     <div class="container">
@@ -6,7 +6,7 @@
             @csrf
             <div class="row">
                 <div class="col-md-6">
-                    <label for="exampleInputEmail1">Sede</label>
+                    <label for="exampleInputEmail1">Centro</label>
                     <select name="centro" class="form-control">
                         @foreach($centro as $centros)
                             <option value="{{$centros->id_centro}}">{{$centros->nombre_centro}}</option>
@@ -14,7 +14,7 @@
                     </select>
                 </div>
                 <div class="col-md-6">
-                    <label for="exampleInputEmail1">Laboratorio</label>
+                    <label for="exampleInputEmail1">Sede</label>
                     <select name="sede" class="form-control">
                         @foreach($sede as $sedes)
                             <option value="{{$sedes->id_sede}}">{{$sedes->nombre_sede}}</option>

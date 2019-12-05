@@ -6,6 +6,7 @@ use App\centro;
 use App\envio_centro;
 use App\sede;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class EnvioCentroController extends Controller
 {
@@ -20,7 +21,14 @@ class EnvioCentroController extends Controller
      */
     public function index()
     {
-        return view('env_centro.index');
+
+        $enviado = DB::table('envio_centros')
+            ->join('centros', 'centros.id_centro', '=', 'envio_centros.id_centro')
+            ->join('sedes', 'sedes.id_centro', '=', 'envio_centros.id_centro')
+            ->select('envio_centros.id_env_cen', 'sedes.nombre_sede','centros.nombre_centro')
+            ->get();
+
+        return view('env_centro.index',compact('enviado'));
     }
 
     /**
@@ -43,7 +51,18 @@ class EnvioCentroController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        $request->validate([
+            'centro' => 'required',
+            'sede' => 'required'
+        ]);
+
+        $env_centro = new envio_centro();
+        $env_centro->id_centro = $request->input('centro');
+        $env_centro->id_sede = $request->input('sede');
+        $env_centro->save();
+
+        return redirect()->route('envceo.create');
+
     }
 
     /**
@@ -63,9 +82,13 @@ class EnvioCentroController extends Controller
      * @param  \App\envio_centro  $envio_centro
      * @return \Illuminate\Http\Response
      */
-    public function edit(envio_centro $envio_centro)
+    public function edit($envio_centro)
     {
-        //
+        $edit = envio_centro::finc($envio_centro);
+        $sede = sede::all();
+        $centro = centro::all();
+
+        return view('env_centro.edit',compact('edit','sede'))->with(compact('centro'));
     }
 
     /**
@@ -75,9 +98,19 @@ class EnvioCentroController extends Controller
      * @param  \App\envio_centro  $envio_centro
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, envio_centro $envio_centro)
+    public function update(Request $request, $envio_centro)
     {
-        //
+        $request->validate([
+            'centro' => 'required',
+            'sede' => 'required'
+        ]);
+
+        $env_centros = envio_centro::find($envio_centro);
+        $env_centros->id_centro = $request->input('centro');
+        $env_centros->id_sede = $request->input('sede');
+        $env_centros->save();
+
+        return redirect()->route('envceo.index');
     }
 
     /**
@@ -88,6 +121,8 @@ class EnvioCentroController extends Controller
      */
     public function destroy(envio_centro $envio_centro)
     {
-        //
+        $envio_centro->delete();
+
+        return redirect()->route('envceo.index');
     }
 }
