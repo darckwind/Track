@@ -13,6 +13,7 @@ class SedeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        $this->middleware('sede');
     }
     /**
      * Display a listing of the resource.

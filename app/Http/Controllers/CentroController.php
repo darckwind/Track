@@ -10,6 +10,11 @@ use Illuminate\Support\Facades\DB;
 
 class CentroController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('centro');
+    }
     /**
      * Display a listing of the resource.
      *
