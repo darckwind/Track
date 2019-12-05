@@ -68,7 +68,7 @@
                                 <a class="dropdown-item" href="{{route('envsede.index')}}">Vista General Envios Sedes</a>
                                 <a class="dropdown-item" href="{{route('envsede.create')}}">Nuevo Envio Sede </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="{{route('envceo.create')}}">Vista General Envio CEO</a>
+                                <a class="dropdown-item" href="{{route('envceo.index')}}">Vista General Envio CEO</a>
                                 <a class="dropdown-item" href="{{route('envceo.create')}}">Nuevo Envio CEO </a>
                             </div>
                         </li>
