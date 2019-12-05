@@ -13,7 +13,8 @@ class CentroController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-        $this->middleware('centro');
+        $this->middleware('admin');
+        $this->middleware('centro', ['except' => 'create']);
     }
     /**
      * Display a listing of the resource.
