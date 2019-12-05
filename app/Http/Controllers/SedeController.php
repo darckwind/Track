@@ -63,9 +63,7 @@ class SedeController extends Controller
         $sede->id_estado = $request->input('estado');
         $sede->save();
 
-        $estado = estado::all();
-        $user = User::all()->where('id_tipo','=',1);
-        return view('sede.create',compact('user','estado'));
+        return redirect()->route('sede.create');
     }
 
     /**
@@ -109,12 +107,7 @@ class SedeController extends Controller
         $sedes->id_estado = $request->input('estado');
         $sedes->save();
 
-        $sede = DB::table('sedes')
-            ->join('users', 'users.id', '=', 'sedes.id_users')
-            ->join('estados', 'estados.id_estado', '=', 'sedes.id_estado')
-            ->select('sedes.id_sede', 'sedes.nombre_sede','sedes.direccion_sede','users.name','estados.descripcion')
-            ->get();
-        return view('sede.index',compact('sede'));
+        return redirect()->route('sede.index');
     }
 
     /**
@@ -127,12 +120,7 @@ class SedeController extends Controller
     {
         $sede->delete();
 
-        $sede = DB::table('sedes')
-            ->join('users', 'users.id', '=', 'sedes.id_users')
-            ->join('estados', 'estados.id_estado', '=', 'sedes.id_estado')
-            ->select('sedes.id_sede', 'sedes.nombre_sede','sedes.direccion_sede','users.name','estados.descripcion')
-            ->get();
-        return view('sede.index',compact('sede'));
+        return redirect()->route('sede.index');
 
     }
 }
