@@ -39,7 +39,7 @@
                             @if(Auth::user()->id_tipo == 1)
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Informacion Sentros
+                                        Informacion Sedes
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="{{route('sede.index')}}">Vista General Sede</a>
