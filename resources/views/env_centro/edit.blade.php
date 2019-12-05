@@ -11,7 +11,7 @@
                     <select name="centro" class="form-control">
                         @foreach($centro as $centros)
                             @if($edit->id_centro == $centros->id_centro)
-                                <option value="{{$centros->id_centro}}">Centro previo{{$centros->nombre_centro}}</option>
+                                <option value="{{$centros->id_centro}}">Centro previo {{$centros->nombre_centro}}</option>
                             @endif
                         @endforeach
                         @foreach($centro as $centros)
