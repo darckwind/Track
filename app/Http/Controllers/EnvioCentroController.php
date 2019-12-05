@@ -84,7 +84,7 @@ class EnvioCentroController extends Controller
      */
     public function edit($envio_centro)
     {
-        $edit = envio_centro::finc($envio_centro);
+        $edit = envio_centro::find($envio_centro);
         $sede = sede::all();
         $centro = centro::all();
 
