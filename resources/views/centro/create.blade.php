@@ -1,5 +1,9 @@
 @extends('../layouts.app')
 @section('content')
+    @if(Auth::user()->id_tipo != 3)
+        {{redirect('home')}}
+    @endif
+
     <div class="container">
         <form action="{{ route('centro.store') }}" method="post">
             @csrf
@@ -37,11 +41,7 @@
                     </select>
                 </div>
                 <div class="colmd-12">
-                    <button type="submit" class="btn btn-primary"
-                            @if(Auth::user()->id_tipo != 3)
-                            disabled
-                            @endif
-                    >Guardar</button>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
             </div>
 
