@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
-Auth::routes(['register' => false]);
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/item','ItemController');
