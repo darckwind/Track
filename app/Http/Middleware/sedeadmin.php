@@ -18,7 +18,7 @@ class sedeadmin
         /*
          * identifica el usuario por medio del rol id
          */
-        if ($request->user()->id_tipo == 1){
+        if ($request->user()->id_tipo == 3 || $request->user()->id_tipo == 1){
             return $next($request);
         }else{
             return redirect('home');

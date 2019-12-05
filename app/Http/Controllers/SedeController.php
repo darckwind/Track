@@ -13,8 +13,7 @@ class SedeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-        $this->middleware('admin');
-        $this->middleware('sede', ['except' => 'create']);
+        $this->middleware('sede');
     }
     /**
      * Display a listing of the resource.
