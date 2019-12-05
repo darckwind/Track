@@ -20,7 +20,7 @@
 
                     <td>
                         <form action="{{ route('envsede.destroy',$envs->id_env_cen) }}" method="POST">
-                            <a class="btn btn-warning" href="{{ route('envsede.edit',$envs->id_env_cen) }}">edit</a>
+                            <a class="btn btn-warning" href="{{ route('envceo.edit',$envs->id_env_cen) }}">edit</a>
                             <!--selector multiples edicion de datos-->
                             @csrf
                             @method('DELETE')
