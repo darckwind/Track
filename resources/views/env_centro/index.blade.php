@@ -2,6 +2,6 @@
 
 @section('content')
     <div class="container">
-        nice nice nice
+        {{$enviado}}
     </div>
 @endsection
