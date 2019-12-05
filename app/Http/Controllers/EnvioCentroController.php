@@ -119,9 +119,10 @@ class EnvioCentroController extends Controller
      * @param  \App\envio_centro  $envio_centro
      * @return \Illuminate\Http\Response
      */
-    public function destroy(envio_centro $envio_centro)
+    public function destroy($envio_centro)
     {
-        $envio_centro->delete();
+        $envio_cen = envio_centro::find($envio_centro);
+        $envio_cen->delete();
 
         return redirect()->route('envceo.index');
     }
