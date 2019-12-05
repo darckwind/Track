@@ -37,7 +37,11 @@
                     </select>
                 </div>
                 <div class="colmd-12">
-                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button type="submit" class="btn btn-primary"
+                            @if(Auth::user()->id_tipo != 3)
+                            disabled
+                            @endif
+                    >Guardar</button>
                 </div>
             </div>
 
