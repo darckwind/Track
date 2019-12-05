@@ -18,7 +18,7 @@ class EnvioCentroController extends Controller
      */
     public function index()
     {
-        //
+        return view('env_centro.index');
     }
 
     /**
