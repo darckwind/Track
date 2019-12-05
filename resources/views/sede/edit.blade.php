@@ -34,7 +34,7 @@
                     <label for="exampleInputEmail1">Nombre Sede</label>
                     <input type="text" class="form-control" name="nombre_sede" value="{{$sede->nombre_sede}}"
                             @if(Auth::user()->id_tipo != 3)
-                                disabled
+                                readonly
                             @endif
                     >
                     <small  class="form-text text-muted">en caso de usar una abreviacion, que esta sea facil de identificar</small>
@@ -43,7 +43,7 @@
                     <label for="exampleInputEmail1">Dirección Sede</label>
                     <input type="text" class="form-control" name="direccion_sede" value="{{$sede->direccion_sede}}"
                             @if(Auth::user()->id_tipo != 3)
-                                disabled
+                                readonly
                             @endif
                     >
                 </div>
@@ -51,7 +51,7 @@
                     <label for="exampleInputEmail1">Encargado Sede</label>
                     <select name="encargado" class="form-control"
                             @if(Auth::user()->id_tipo != 3)
-                                disabled
+                                readonly
                             @endif
                     >
                         @foreach($user as $users)
