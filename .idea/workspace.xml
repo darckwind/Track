@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dff3ce6b-8c27-4a51-8d7f-5b227e82bec1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/env_centro/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/env_centro/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/env_centro/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="330">
+              <caret line="22" column="102" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
             </state>
           </provider>
         </entry>
@@ -40,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EnvioCentroController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="375">
+              <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
               <folding>
                 <element signature="e#40#55#0#PHP" expanded="true" />
               </folding>
@@ -360,21 +359,7 @@
       <workItem from="1574774877519" duration="16021000" />
       <workItem from="1574946969666" duration="30467000" />
       <workItem from="1575323724834" duration="9359000" />
-      <workItem from="1575462560447" duration="18532000" />
-    </task>
-    <task id="LOCAL-00205" summary="index envios lab">
-      <created>1575476209443</created>
-      <option name="number" value="00205" />
-      <option name="presentableId" value="LOCAL-00205" />
-      <option name="project" value="LOCAL" />
-      <updated>1575476209443</updated>
-    </task>
-    <task id="LOCAL-00206" summary="creacion centros">
-      <created>1575476301986</created>
-      <option name="number" value="00206" />
-      <option name="presentableId" value="LOCAL-00206" />
-      <option name="project" value="LOCAL" />
-      <updated>1575476301986</updated>
+      <workItem from="1575462560447" duration="18761000" />
     </task>
     <task id="LOCAL-00207" summary="creacion centros">
       <created>1575477223294</created>
@@ -705,17 +690,31 @@
       <option name="project" value="LOCAL" />
       <updated>1575552133804</updated>
     </task>
-    <option name="localTasksCounter" value="254" />
+    <task id="LOCAL-00254" summary="creacion centros">
+      <created>1575552186988</created>
+      <option name="number" value="00254" />
+      <option name="presentableId" value="LOCAL-00254" />
+      <option name="project" value="LOCAL" />
+      <updated>1575552186988</updated>
+    </task>
+    <task id="LOCAL-00255" summary="creacion centros">
+      <created>1575552240790</created>
+      <option name="number" value="00255" />
+      <option name="presentableId" value="LOCAL-00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1575552240791</updated>
+    </task>
+    <option name="localTasksCounter" value="256" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74379000" />
+    <option name="totallyTimeSpent" value="74608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4955595" visible="true" weight="0.23263328" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4955595" visible="true" weight="0.23263328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.5044405" side_tool="true" weight="0.23263328" />
@@ -731,7 +730,7 @@
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32924962" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.32924962" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32924962" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.22876713" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.22876713" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -886,13 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
           <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/env_sede/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="22" column="103" selection-start-line="22" selection-start-column="92" selection-end-line="22" selection-end-column="103" />
         </state>
       </provider>
     </entry>
@@ -1130,18 +1122,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EnvioCentroController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="375">
+          <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
           <folding>
             <element signature="e#40#55#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/env_sede/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="10" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="32" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/env_centro/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state relative-caret-position="330">
+          <caret line="22" column="102" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
         </state>
       </provider>
     </entry>
