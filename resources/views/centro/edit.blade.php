@@ -9,7 +9,7 @@
                     <label for="exampleInputEmail1">Nombre Centro</label>
                     <input type="text" class="form-control" name="nombre_centro" value="{{$centro->nombre_centro}}"
                             @if(Auth::user()->id_tipo != 3)
-                                disabled
+                                readonly
                             @endif
                     >
                 </div>
@@ -17,7 +17,7 @@
                     <label for="exampleInputEmail1">Region Centro</label>
                     <input type="text" class="form-control" name="region_centro" value="{{$centro->region_centro}}"
                             @if(Auth::user()->id_tipo != 3)
-                                disabled
+                                readonly
                             @endif
                     >
                 </div>
@@ -25,7 +25,7 @@
                     <label for="exampleInputEmail1">Comuna Centro</label>
                     <input type="text" class="form-control" name="comuna_centro" value="{{$centro->comuna_centro}}"
                             @if(Auth::user()->id_tipo != 3)
-                                disabled
+                                readonly
                             @endif
                     >
                 </div>
@@ -33,7 +33,7 @@
                     <label for="exampleInputEmail1">Direccion Centro</label>
                     <input type="text" class="form-control" name="direccion_centro" value="{{$centro->direccion_centro}}"
                             @if(Auth::user()->id_tipo != 3)
-                                disabled
+                                readonly
                             @endif
                     >
                 </div>
@@ -41,7 +41,7 @@
                     <label for="exampleInputEmail1">Encargado Centro</label>
                     <select name="encargado" class="form-control"
                             @if(Auth::user()->id_tipo != 3)
-                                disabled
+                                readonly
                             @endif
                     >
                         @foreach($user as $users)
