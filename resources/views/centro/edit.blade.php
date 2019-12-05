@@ -7,23 +7,43 @@
             <div class="row">
                 <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Nombre Centro</label>
-                    <input type="text" class="form-control" name="nombre_centro" value="{{$centro->nombre_centro}}">
+                    <input type="text" class="form-control" name="nombre_centro" value="{{$centro->nombre_centro}}"
+                            @if(Auth::user()->id_tipo != 3)
+                                disabled
+                            @endif
+                    >
                 </div>
                 <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Region Centro</label>
-                    <input type="text" class="form-control" name="region_centro" value="{{$centro->region_centro}}">
+                    <input type="text" class="form-control" name="region_centro" value="{{$centro->region_centro}}"
+                            @if(Auth::user()->id_tipo != 3)
+                                disabled
+                            @endif
+                    >
                 </div>
                 <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Comuna Centro</label>
-                    <input type="text" class="form-control" name="comuna_centro" value="{{$centro->comuna_centro}}">
+                    <input type="text" class="form-control" name="comuna_centro" value="{{$centro->comuna_centro}}"
+                            @if(Auth::user()->id_tipo != 3)
+                                disabled
+                            @endif
+                    >
                 </div>
                 <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Direccion Centro</label>
-                    <input type="text" class="form-control" name="direccion_centro" value="{{$centro->direccion_centro}}">
+                    <input type="text" class="form-control" name="direccion_centro" value="{{$centro->direccion_centro}}"
+                            @if(Auth::user()->id_tipo != 3)
+                                disabled
+                            @endif
+                    >
                 </div>
                 <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Encargado Centro</label>
-                    <select name="encargado" class="form-control">
+                    <select name="encargado" class="form-control"
+                            @if(Auth::user()->id_tipo != 3)
+                                disabled
+                            @endif
+                    >
                         @foreach($user as $users)
                             @if($users->id == $centro->id_users)
                                 <option value="{{$users->id}}">Encargado previo {{$users->name}}</option>
@@ -54,8 +74,4 @@
 
         </form>
     </div>
-
-
-
-
 @endsection
