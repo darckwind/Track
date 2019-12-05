@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dff3ce6b-8c27-4a51-8d7f-5b227e82bec1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/centro/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/centro/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,20 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/sede/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-125">
-              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/centro/edit.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="286">
+              <caret line="53" column="119" selection-start-line="53" selection-start-column="119" selection-end-line="53" selection-end-column="119" />
             </state>
           </provider>
         </entry>
@@ -82,7 +74,6 @@
         <option value="$PROJECT_DIR$/app/centro.php" />
         <option value="$PROJECT_DIR$/resources/views/etiqueta/etiqueta.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/etiqueta/sede.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/env_centro/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/env_centro/index.blade.php" />
         <option value="$PROJECT_DIR$/app/envio_centro.php" />
@@ -103,14 +94,15 @@
         <option value="$PROJECT_DIR$/app/Http/Middleware/centroadmin.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/sedeadmin.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CentroController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/SedeController.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/centro/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/centro/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/sede/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/sede/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/sede/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/centro/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/centro/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SedeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
       </list>
     </option>
   </component>
@@ -225,31 +217,6 @@
             <path>
               <item name="Track" type="b2602c69:ProjectViewProjectNode" />
               <item name="Track" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Track" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Track" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Track" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Track" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Track" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Track" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Track" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Track" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -281,6 +248,13 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="centro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Track" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Track" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Track" type="b2602c69:ProjectViewProjectNode" />
@@ -345,28 +319,7 @@
       <workItem from="1574774877519" duration="16021000" />
       <workItem from="1574946969666" duration="30467000" />
       <workItem from="1575323724834" duration="9359000" />
-      <workItem from="1575462560447" duration="24138000" />
-    </task>
-    <task id="LOCAL-00233" summary="creacion centros">
-      <created>1575492969285</created>
-      <option name="number" value="00233" />
-      <option name="presentableId" value="LOCAL-00233" />
-      <option name="project" value="LOCAL" />
-      <updated>1575492969285</updated>
-    </task>
-    <task id="LOCAL-00234" summary="creacion centros">
-      <created>1575493156619</created>
-      <option name="number" value="00234" />
-      <option name="presentableId" value="LOCAL-00234" />
-      <option name="project" value="LOCAL" />
-      <updated>1575493156619</updated>
-    </task>
-    <task id="LOCAL-00235" summary="creacion centros">
-      <created>1575493895990</created>
-      <option name="number" value="00235" />
-      <option name="presentableId" value="LOCAL-00235" />
-      <option name="project" value="LOCAL" />
-      <updated>1575493895990</updated>
+      <workItem from="1575462560447" duration="24892000" />
     </task>
     <task id="LOCAL-00236" summary="creacion centros">
       <created>1575493922807</created>
@@ -690,11 +643,32 @@
       <option name="project" value="LOCAL" />
       <updated>1575561022412</updated>
     </task>
-    <option name="localTasksCounter" value="282" />
+    <task id="LOCAL-00282" summary="creacion centros">
+      <created>1575561143039</created>
+      <option name="number" value="00282" />
+      <option name="presentableId" value="LOCAL-00282" />
+      <option name="project" value="LOCAL" />
+      <updated>1575561143039</updated>
+    </task>
+    <task id="LOCAL-00283" summary="creacion centros">
+      <created>1575561197300</created>
+      <option name="number" value="00283" />
+      <option name="presentableId" value="LOCAL-00283" />
+      <option name="project" value="LOCAL" />
+      <updated>1575561197300</updated>
+    </task>
+    <task id="LOCAL-00284" summary="creacion centros">
+      <created>1575561353788</created>
+      <option name="number" value="00284" />
+      <option name="presentableId" value="LOCAL-00284" />
+      <option name="project" value="LOCAL" />
+      <updated>1575561353788</updated>
+    </task>
+    <option name="localTasksCounter" value="285" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79985000" />
+    <option name="totallyTimeSpent" value="80739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -857,13 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/env_sede/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1013,13 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LaboratorioController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Planillas.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1075,34 +1035,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SedeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding>
-            <element signature="e#40#55#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/centro/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="43" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/sede/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/centro/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="50" column="59" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="50" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1120,10 +1056,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/centro/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SedeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="120" column="24" lean-forward="true" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
+          <folding>
+            <element signature="e#40#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LaboratorioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/centro/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/centro/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="43" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="53" column="119" selection-start-line="53" selection-start-column="119" selection-end-line="53" selection-end-column="119" />
         </state>
       </provider>
     </entry>

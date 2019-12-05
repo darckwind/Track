@@ -35,6 +35,27 @@
                     @guest
                     @else
                     <ul class="navbar-nav mr-auto">
+                        @if(Auth::user()->id_tipo != 3)
+                            @if(Auth::user()->id_tipo == 1)
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Informacion Sentros
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{route('sede.index')}}">Vista General Sede</a>
+                                    </div>
+                                </li>
+                            @elseif(Auth::user()->id_tipo == 2)
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Informacion Centros
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{route('centro.index')}}">Vista General CEO</a>
+                                    </div>
+                                </li>
+                            @endif
+                        @elseif(Auth::user()->id_tipo == 3)
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Instrumentos
@@ -83,7 +104,7 @@
                                 <a class="dropdown-item" href="{{route('enc.create')}}">Nuevo Usuario</a>
                             </div>
                         </li>
-
+                        @endif
                     </ul>
                     @endguest
                     <!-- Right Side Of Navbar -->
