@@ -2,7 +2,7 @@
 @section('content')
     <div class="container">
         @if(Auth::user()->id_tipo != 3)
-            Acciones No habilitadas
+            Creacion de Centros no habilitada para usuario {{Auth::user()->name}}
         @elseif(Auth::user()->id_tipo == 3)
             <form action="{{ route('centro.store') }}" method="post">
                 @csrf
