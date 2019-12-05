@@ -46,21 +46,17 @@
                     <th>{{$centros->name}}</th>
                     <th>{{$centros->descripcion}}</th>
                     <td>
-                        <form action="{{ route('centro.destroy',$centros->id_centro) }}" method="POST">
-                            <a class="btn btn-warning" href="{{ route('centro.edit',$centros->id_centro) }}"
-                                @if(Auth::user()->id_tipo != 3)
-                                    disabled
-                                @endif
-                            >edit</a>
-                            <!--selector multiples edicion de datos-->
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn btn-danger"
-                                    @if(Auth::user()->id_tipo != 3)
-                                        disabled
-                                    @endif
-                            >Delete</button>
-                        </form>
+                        @if(Auth::user()->id_tipo != 3)
+                            Acciones No habilitadas
+                        @elseif(Auth::user()->id_tipo == 3)
+                            <form action="{{ route('centro.destroy',$centros->id_centro) }}" method="POST">
+                                <a class="btn btn-warning" href="{{ route('centro.edit',$centros->id_centro) }}">edit</a>
+                                <!--selector multiples edicion de datos-->
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger" >Delete</button>
+                            </form>
+                        @endif
                     </td>
                 </tr>
             @endforeach
