@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <form action="{{ route('envceo.update') }}" method="POST">
+        <form action="{{ route('envceo.update',$edit->id_env_cen) }}" method="POST">
             @csrf
             @method('PUT')
             <div class="row">
