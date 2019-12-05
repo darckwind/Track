@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\centro;
 use App\envio_centro;
+use App\sede;
 use Illuminate\Http\Request;
 
 class EnvioCentroController extends Controller
@@ -28,7 +30,9 @@ class EnvioCentroController extends Controller
      */
     public function create()
     {
-        //
+        $sede = sede::all();
+        $centro = centro::all();
+        return view('env_centro.create',compact('centro','sede'));
     }
 
     /**
@@ -39,7 +43,7 @@ class EnvioCentroController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
