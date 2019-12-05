@@ -24,7 +24,7 @@ class EnvioCentroController extends Controller
 
         $enviado = DB::table('envio_centros')
             ->join('centros', 'centros.id_centro', '=', 'envio_centros.id_centro')
-            ->join('sedes', 'sedes.id_centro', '=', 'envio_centros.id_centro')
+            ->join('sedes', 'sedes.id_sede', '=', 'envio_centros.id_sede')
             ->select('envio_centros.id_env_cen', 'sedes.nombre_sede','centros.nombre_centro')
             ->get();
 
