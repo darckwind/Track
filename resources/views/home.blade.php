@@ -13,6 +13,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                        @if(Auth::user()->id_tipo==3)
+                            enter code here admin eres god
+                        @endif
 
                     You are logged in!
                 </div>
