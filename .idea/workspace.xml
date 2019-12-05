@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dff3ce6b-8c27-4a51-8d7f-5b227e82bec1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/centroadmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/sedeadmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CentroController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CentroController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Encargado.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Encargado.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EnvioCentroController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EnvioCentroController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EnvioLabController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EnvioSedeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EnvioSedeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EstadoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EstadoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LaboratorioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LaboratorioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Planillas.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Planillas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SedeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SedeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TipoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TipoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-    </list>
+    <list default="true" id="dff3ce6b-8c27-4a51-8d7f-5b227e82bec1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SedeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="281">
+              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
               <folding>
                 <element signature="e#40#55#0#PHP" expanded="true" />
               </folding>
@@ -47,10 +29,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CentroController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
               <folding>
                 <element signature="e#40#55#0#PHP" expanded="true" />
               </folding>
@@ -108,7 +99,6 @@
         <option value="$PROJECT_DIR$/resources/views/centro/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/centro/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/centro/edit.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/etiqueta/etiqueta.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/etiqueta/sede.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
@@ -131,8 +121,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Planillas.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TipoController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CentroController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SedeController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CentroController.php" />
       </list>
     </option>
   </component>
@@ -367,21 +358,7 @@
       <workItem from="1574774877519" duration="16021000" />
       <workItem from="1574946969666" duration="30467000" />
       <workItem from="1575323724834" duration="9359000" />
-      <workItem from="1575462560447" duration="21480000" />
-    </task>
-    <task id="LOCAL-00217" summary="creacion centros">
-      <created>1575481572672</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1575481572672</updated>
-    </task>
-    <task id="LOCAL-00218" summary="creacion centros">
-      <created>1575481634509</created>
-      <option name="number" value="00218" />
-      <option name="presentableId" value="LOCAL-00218" />
-      <option name="project" value="LOCAL" />
-      <updated>1575481634509</updated>
+      <workItem from="1575462560447" duration="21847000" />
     </task>
     <task id="LOCAL-00219" summary="creacion centros">
       <created>1575481684790</created>
@@ -712,17 +689,31 @@
       <option name="project" value="LOCAL" />
       <updated>1575556048786</updated>
     </task>
-    <option name="localTasksCounter" value="266" />
+    <task id="LOCAL-00266" summary="creacion centros">
+      <created>1575557149817</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1575557149817</updated>
+    </task>
+    <task id="LOCAL-00267" summary="creacion centros">
+      <created>1575557369421</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1575557369421</updated>
+    </task>
+    <option name="localTasksCounter" value="268" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77327000" />
+    <option name="totallyTimeSpent" value="77694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4955595" visible="true" weight="0.23263328" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4955595" visible="true" weight="0.23263328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.5044405" side_tool="true" weight="0.23263328" />
@@ -738,7 +729,7 @@
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32924962" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.32924962" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32924962" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.22876713" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.22876713" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -904,13 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="40" column="51" lean-forward="true" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1129,20 +1113,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CentroController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SedeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="281">
+          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
           <folding>
             <element signature="e#40#55#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SedeController.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="315">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CentroController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
           <folding>
             <element signature="e#40#55#0#PHP" expanded="true" />
           </folding>
