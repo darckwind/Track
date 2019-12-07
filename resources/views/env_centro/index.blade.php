@@ -4,7 +4,7 @@
     <div class="container">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Vista general envios Sedes</h2>
+                <h2>Vista general envios Centros</h2>
             </div>
         </div>
         <table class="table table-responsive-sm">
