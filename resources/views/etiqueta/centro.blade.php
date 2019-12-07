@@ -21,19 +21,30 @@
 <div class="row">
     @foreach($centro as $centros)
         <div class="col-md-6">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://track.devriko.com/envceo/{{$centros->id_centro}}/edit" class="img-thumbnail">
-            <table class="table">
-                <tr>
-                    <th>Centro</th>
-                    <td>{{$centros->nombre_centro}}</td>
-                    <th>Region</th>
-                    <td>{{$centros->region_centro}}</td>
-                    <th>Comuna</th>
-                    <td>{{$centros->comuna_centro}}</td>
-                    <th>Direccion</th>
-                    <td>{{$centros->direccion_centro}}</td>
-                </tr>
-            </table>
+            <div class="col-md-4">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://track.devriko.com/envceo/{{$centros->id_centro}}/edit" class="img-thumbnail">
+            </div>
+            <div class="col-md-8">
+                <table class="table">
+                    <tr>
+                        <th>Centro</th>
+                        <td>{{$centros->nombre_centro}}</td>
+                    </tr>
+                    <tr>
+                        <th>Region</th>
+                        <td>{{$centros->region_centro}}</td>
+                    </tr>
+                    <tr>
+                        <th>Comuna</th>
+                        <td>{{$centros->comuna_centro}}</td>
+                    </tr>
+                    <tr>
+                        <th>Direccion</th>
+                        <td>{{$centros->direccion_centro}}</td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
     @endforeach
 </div>
