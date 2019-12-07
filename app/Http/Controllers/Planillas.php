@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\centro;
+use App\envio_centro;
 use App\envio_lab;
 use App\laboratorio;
 use App\sede;
@@ -45,11 +46,7 @@ class Planillas extends Controller
     public function centro()
     {
 
-        $env = DB::table('envio_centros')
-            ->join('centros', 'centros.id_centro', '=', 'envio_centros.id_centro')
-            ->join('sedes', 'sedes.id_sede', '=', 'envio_centros.id_sede')
-            ->select('envio_centros.id_env_cen','centros.id_centro', 'sedes.nombre_sede','centros.nombre_centro')
-            ->get();
+        $env = envio_centro::all();
         $centro = centro::all();
         return view('etiqueta.centro',compact('env','centro'));
     }
