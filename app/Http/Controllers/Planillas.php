@@ -45,12 +45,12 @@ class Planillas extends Controller
     public function centro()
     {
 
-        $enviado = DB::table('envio_centros')
+        $env = DB::table('envio_centros')
             ->join('centros', 'centros.id_centro', '=', 'envio_centros.id_centro')
             ->join('sedes', 'sedes.id_sede', '=', 'envio_centros.id_sede')
-            ->select('envio_centros.id_env_cen','envio_centros.id_centro', 'sedes.nombre_sede','centros.nombre_centro')
+            ->select('envio_centros.id_env_cen','centros.id_centro', 'sedes.nombre_sede','centros.nombre_centro')
             ->get();
         $centro = centro::all();
-        return view('etiqueta.centro',compact('enviado','centro'));
+        return view('etiqueta.centro',compact('env','centro'));
     }
 }
