@@ -49,8 +49,6 @@
                     <tr>
                         <th>Nombre</th>
                         <td>{{\App\User::find($centros->id_users)->name}}</td>
-                    </tr>
-                    <tr>
                         <th>Run</th>
                         <td>{{\App\User::find($centros->id_users)->run_enc}}</td>
                     </tr>
