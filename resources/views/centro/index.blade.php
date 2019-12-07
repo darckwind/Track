@@ -55,7 +55,6 @@
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger" >Delete</button>
-
                             @endif
                         </form>
                     </td>

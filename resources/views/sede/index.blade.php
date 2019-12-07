@@ -44,17 +44,18 @@
                     <th>{{$sedes->name}}</th>
                     <th>{{$sedes->descripcion}}</th>
                     <td>
-                        @if(Auth::user()->id_tipo != 3)
-                            <form action="{{ route('sede.destroy',$sedes->id_sede) }}" method="POST">
+                        <form action="{{ route('sede.destroy',$sedes->id_sede) }}" method="POST">
+                            @if(Auth::user()->id_tipo != 3)
                                 <a class="btn btn-warning" href="{{ route('sede.edit',$sedes->id_sede) }}">edit</a>
-                        @elseif(Auth::user()->id_tipo == 3)
+                            @elseif(Auth::user()->id_tipo == 3)
+                                <a class="btn btn-warning" href="{{ route('sede.edit',$sedes->id_sede) }}">edit</a>
                                 <!--selector multiples edicion de datos-->
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Delete</button>
 
-                        @endif
-                            </form>
+                            @endif
+                        </form>
                     </td>
                 </tr>
             @endforeach
