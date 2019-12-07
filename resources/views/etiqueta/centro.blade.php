@@ -66,6 +66,13 @@
                     </tr>
                 </table>
             </div>
+            <div class="col-md-12">
+                @foreach($enviado as $env_cen)
+                    @if($env_cen->id_centro == $centros->id_centro)
+                        {{$env_cen}}
+                    @endif
+                @endforeach
+            </div>
         </div>
     @endforeach
 </div>
