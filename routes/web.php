@@ -31,3 +31,4 @@ Route::resource('/centro','CentroController');
 
 Route::get('etiqueta/lab','Planillas@laboratorio');
 Route::get('etiqueta/sede','Planillas@sede');
+Route::get('etiqueta/cen','Planillas@centro');
