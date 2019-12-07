@@ -66,12 +66,26 @@
                 </table>
             </div>
             <div class="col-md-12">
+                <table class="table">
+                    <tr>
+                        <th>
+                            Contenido
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="list-group">
+                                @foreach($env as $env_cen)
+                                    @if($env_cen->id_centro == $centros->id_centro)
+                                        <li class="list-group-item">{{\App\sede::find($env_cen->id_sede)->nombre_sede}}</li>
+                                    @endif
+                                @endforeach
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
                 <p>Contenido</p>
-                @foreach($env as $env_cen)
-                    @if($env_cen->id_centro == $centros->id_centro)
-                        {{\App\sede::find($env_cen->id_sede)->nombre_sede}}
-                    @endif
-                @endforeach
+
             </div>
         </div>
     @endforeach
