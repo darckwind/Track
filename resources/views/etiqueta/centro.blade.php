@@ -67,9 +67,10 @@
                 </table>
             </div>
             <div class="col-md-12">
+                <p>Contenido</p>
                 @foreach($env as $env_cen)
                     @if($env_cen->id_centro == $centros->id_centro)
-                        {{$env_cen}}
+                        {{\App\sede::find($nv_cen->id_sede)->nombre_sede}}
                     @endif
                 @endforeach
             </div>
