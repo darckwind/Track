@@ -25,8 +25,10 @@
                 <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://track.devriko.com/envceo/{{$centros->id_centro}}/edit" class="img-thumbnail">
             </div>
             <div class="col-md-8">
-                <p>Datos Ubicacion</p>
                 <table class="table">
+                    <tr>
+                        <th>Datos Ubicacion</th>
+                    </tr>
                     <tr>
                         <th>Centro</th>
                         <td>{{$centros->nombre_centro}}</td>
@@ -46,8 +48,10 @@
                 </table>
             </div>
             <div class="col-md-12">
-                <p>Datos Receptor</p>
                 <table class="table">
+                    <tr>
+                        <th>Datos Receptor</th>
+                    </tr>
                     <tr>
                         <th>Nombre</th>
                         <td>{{\App\User::find($centros->id_users)->name}}</td>
