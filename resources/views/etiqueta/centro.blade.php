@@ -84,8 +84,6 @@
                         </td>
                     </tr>
                 </table>
-                <p>Contenido</p>
-
             </div>
         </div>
     @endforeach
