@@ -44,8 +44,26 @@
                     </tr>
                 </table>
             </div>
-            <div>
-                {{\App\User::find($centros->id_users)->name}}
+            <div class="col-md-12">
+                <table class="table">
+                    <tr>
+                        <th>Nombre</th>
+                        <td>{{\App\User::find($centros->id_users)->name}}</td>
+                    </tr>
+                    <tr>
+                        <th>Run</th>
+                        <td>{{\App\User::find($centros->id_users)->run_enc}}</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>{{\App\User::find($centros->id_users)->email}}</td>
+                    </tr>
+                    <tr>
+                        <th>Fono</th>
+                        <td>{{\App\User::find($centros->id_users)->telefono_enc}}</td>
+                    </tr>
+                </table>
+
             </div>
 
         </div>
