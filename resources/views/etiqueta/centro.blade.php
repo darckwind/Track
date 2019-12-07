@@ -44,6 +44,9 @@
                     </tr>
                 </table>
             </div>
+            <div>
+                {{\App\User::find($centros->id_users)->name}}
+            </div>
 
         </div>
     @endforeach
