@@ -18,13 +18,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
 
-<div class="container row">
+<div class="row">
     @foreach($centro as $centros)
         <div class="col-md-6 row">
             <div class="col-md-4">
                 <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://track.devriko.com/envceo/{{$centros->id_centro}}/edit" class="img-thumbnail">
             </div>
             <div class="col-md-8">
+                <p>Datos Ubicacion</p>
                 <table class="table">
                     <tr>
                         <th>Centro</th>
@@ -45,6 +46,7 @@
                 </table>
             </div>
             <div class="col-md-12">
+                <p>Datos Receptor</p>
                 <table class="table">
                     <tr>
                         <th>Nombre</th>
