@@ -38,26 +38,50 @@
                 <th>Acction</th>
             </tr>
             @foreach($sede as $sedes)
-                <tr>
-                    <td>{{$sedes->nombre_sede}}</td>
-                    <td>{{$sedes->direccion_sede}}</td>
-                    <th>{{$sedes->name}}</th>
-                    <th>{{$sedes->descripcion}}</th>
-                    <td>
-                        <form action="{{ route('sede.destroy',$sedes->id_sede) }}" method="POST">
-                            @if(Auth::user()->id_tipo != 3)
-                                <a class="btn btn-warning" href="{{ route('sede.edit',$sedes->id_sede) }}">edit</a>
-                            @elseif(Auth::user()->id_tipo == 3)
-                                <a class="btn btn-warning" href="{{ route('sede.edit',$sedes->id_sede) }}">edit</a>
-                                <!--selector multiples edicion de datos-->
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Delete</button>
+                @if(Auth::user()->id_tipo == 3)
 
-                            @endif
-                        </form>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>{{$sedes->nombre_sede}}</td>
+                        <td>{{$sedes->direccion_sede}}</td>
+                        <th>{{$sedes->name}}</th>
+                        <th>{{$sedes->descripcion}}</th>
+                        <td>
+                            <form action="{{ route('sede.destroy',$sedes->id_sede) }}" method="POST">
+                                @if(Auth::user()->id_tipo != 3)
+                                    <a class="btn btn-warning" href="{{ route('sede.edit',$sedes->id_sede) }}">edit</a>
+                                @elseif(Auth::user()->id_tipo == 3)
+                                    <a class="btn btn-warning" href="{{ route('sede.edit',$sedes->id_sede) }}">edit</a>
+                                    <!--selector multiples edicion de datos-->
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+
+                                @endif
+                            </form>
+                        </td>
+                    </tr>
+                @elseif(Auth::user()->id == $sedes->id_users)
+                    <tr>
+                        <td>{{$sedes->nombre_sede}}</td>
+                        <td>{{$sedes->direccion_sede}}</td>
+                        <th>{{$sedes->name}}</th>
+                        <th>{{$sedes->descripcion}}</th>
+                        <td>
+                            <form action="{{ route('sede.destroy',$sedes->id_sede) }}" method="POST">
+                                @if(Auth::user()->id_tipo != 3)
+                                    <a class="btn btn-warning" href="{{ route('sede.edit',$sedes->id_sede) }}">edit</a>
+                                @elseif(Auth::user()->id_tipo == 3)
+                                    <a class="btn btn-warning" href="{{ route('sede.edit',$sedes->id_sede) }}">edit</a>
+                                    <!--selector multiples edicion de datos-->
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+
+                                @endif
+                            </form>
+                        </td>
+                    </tr>
+                @endif
             @endforeach
         </table>
 	</div>
