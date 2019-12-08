@@ -21,7 +21,7 @@
     @foreach($centro as $centros)
         <div class="col-md-6 row">
             <div class="col-md-4">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://track.devriko.com/envceo/{{$centros->id_centro}}/edit" class="img-thumbnail">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://track.devriko.com/centro/{{$centros->id_centro}}/edit" class="img-thumbnail">
             </div>
             <div class="col-md-8">
                 <table class="table">
