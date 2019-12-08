@@ -12,13 +12,13 @@
 
                             <div class="row">
                                 <div class="col-md-4">
-                                    <button href="{{route('etlab')}}" class="btn-block btn btn-info">Etiquetas Laboratorio</button>
+                                    <a href="{{route('etlab')}}" class="btn-block btn btn-info">Etiquetas Laboratorio</a>
                                 </div>
                                 <div class="col-md-4">
-                                    <button href="{{route('etsede')}}" class="btn-block btn btn-warning">Etiquetas Sedes</button>
+                                    <a href="{{route('etsede')}}" class="btn-block btn btn-warning">Etiquetas Sedes</a>
                                 </div>
                                 <div class="col-md-4">
-                                    <button href="{{route('etcentro')}}" class="btn-block btn btn-primary">Etiquetas Centros</button>
+                                    <a href="{{route('etcentro')}}" class="btn-block btn btn-primary">Etiquetas Centros</a>
                                 </div>
                             </div>
                     @else
