@@ -38,27 +38,52 @@
                 <th>Acction</th>
             </tr>
             @foreach($centro as $centros)
-                <tr>
-                    <td>{{$centros->nombre_centro}}</td>
-                    <td>{{$centros->region_centro}}</td>
-                    <td>{{$centros->comuna_centro}}</td>
-                    <td>{{$centros->direccion_centro}}</td>
-                    <th>{{$centros->name}}</th>
-                    <th>{{$centros->descripcion}}</th>
-                    <td>
-                        <form action="{{ route('centro.destroy',$centros->id_centro) }}" method="POST">
-                            @if(Auth::user()->id_tipo != 3)
-                                <a class="btn btn-warning" href="{{ route('centro.edit',$centros->id_centro) }}">edit</a>
-                                <!--selector multiples edicion de datos-->
-                            @elseif(Auth::user()->id_tipo == 3)
-                                <a class="btn btn-warning" href="{{ route('centro.edit',$centros->id_centro) }}">edit</a>
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger" >Delete</button>
-                            @endif
-                        </form>
-                    </td>
-                </tr>
+                @if(Auth::user()->id_tipo == 3)
+                    <tr>
+                        <td>{{$centros->nombre_centro}}</td>
+                        <td>{{$centros->region_centro}}</td>
+                        <td>{{$centros->comuna_centro}}</td>
+                        <td>{{$centros->direccion_centro}}</td>
+                        <th>{{$centros->name}}</th>
+                        <th>{{$centros->descripcion}}</th>
+                        <td>
+                            <form action="{{ route('centro.destroy',$centros->id_centro) }}" method="POST">
+                                @if(Auth::user()->id_tipo != 3)
+                                    <a class="btn btn-warning" href="{{ route('centro.edit',$centros->id_centro) }}">edit</a>
+                                    <!--selector multiples edicion de datos-->
+                                @elseif(Auth::user()->id_tipo == 3)
+                                    <a class="btn btn-warning" href="{{ route('centro.edit',$centros->id_centro) }}">edit</a>
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger" >Delete</button>
+                                @endif
+                            </form>
+                        </td>
+                    </tr>
+                @elseif(Auth::user()->id == $centros->id_users)
+                    <tr>
+                        <td>{{$centros->nombre_centro}}</td>
+                        <td>{{$centros->region_centro}}</td>
+                        <td>{{$centros->comuna_centro}}</td>
+                        <td>{{$centros->direccion_centro}}</td>
+                        <th>{{$centros->name}}</th>
+                        <th>{{$centros->descripcion}}</th>
+                        <td>
+                            <form action="{{ route('centro.destroy',$centros->id_centro) }}" method="POST">
+                                @if(Auth::user()->id_tipo != 3)
+                                    <a class="btn btn-warning" href="{{ route('centro.edit',$centros->id_centro) }}">edit</a>
+                                    <!--selector multiples edicion de datos-->
+                                @elseif(Auth::user()->id_tipo == 3)
+                                    <a class="btn btn-warning" href="{{ route('centro.edit',$centros->id_centro) }}">edit</a>
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger" >Delete</button>
+                                @endif
+                            </form>
+                        </td>
+                    </tr>
+                @endif
+
             @endforeach
         </table>
     </div>
