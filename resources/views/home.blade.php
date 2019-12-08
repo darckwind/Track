@@ -8,13 +8,23 @@
                 <div class="card-header">Dashboard</div>
 
                 <div class="card-body">
-                    @if (session('status'))
+                    @if (Auth::user()->id_tipo == 3)
                         <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <button href="track.devriko.com/etiqueta/lab" class="btn-block btn-info">Etiquetas Laboratorio</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button href="track.devriko.com/etiqueta/sede" class="btn-block btn-info">Etiquetas Sedes</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button href="track.devriko.com/etiqueta/cen" class="btn-block btn-info">Etiquetas Centros</button>
+                                </div>
+                            </div>
                         </div>
+                    @else
+                        You are logged in!
                     @endif
-
-                    You are logged in!
                 </div>
             </div>
         </div>
