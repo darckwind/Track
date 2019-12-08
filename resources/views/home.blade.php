@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     @if (Auth::user()->id_tipo == 3)
-                        <div class="alert alert-success" role="alert">
+
                             <div class="row">
                                 <div class="col-md-4">
                                     <button href="track.devriko.com/etiqueta/lab" class="btn-block btn-info">Etiquetas Laboratorio</button>
@@ -21,7 +21,6 @@
                                     <button href="track.devriko.com/etiqueta/cen" class="btn-block btn-info">Etiquetas Centros</button>
                                 </div>
                             </div>
-                        </div>
                     @else
                         You are logged in!
                     @endif
