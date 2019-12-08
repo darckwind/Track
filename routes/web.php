@@ -29,6 +29,6 @@ Route::resource('/centro','CentroController');
 
 //test
 
-Route::get('etiqueta/lab','Planillas@laboratorio');
-Route::get('etiqueta/sede','Planillas@sede');
-Route::get('etiqueta/cen','Planillas@centro');
+Route::get('etiqueta/lab','Planillas@laboratorio')->name('etlab');
+Route::get('etiqueta/sede','Planillas@sede')->name('etsede');
+Route::get('etiqueta/cen','Planillas@centro')->name('etcentro');
