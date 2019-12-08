@@ -12,13 +12,13 @@
 
                             <div class="row">
                                 <div class="col-md-4">
-                                    <button href="track.devriko.com/etiqueta/lab" class="btn-block btn-info">Etiquetas Laboratorio</button>
+                                    <button href="track.devriko.com/etiqueta/lab" class="btn-block btn btn-info">Etiquetas Laboratorio</button>
                                 </div>
                                 <div class="col-md-4">
-                                    <button href="track.devriko.com/etiqueta/sede" class="btn-block btn-info">Etiquetas Sedes</button>
+                                    <button href="track.devriko.com/etiqueta/sede" class="btn-block btn btn-warning">Etiquetas Sedes</button>
                                 </div>
                                 <div class="col-md-4">
-                                    <button href="track.devriko.com/etiqueta/cen" class="btn-block btn-info">Etiquetas Centros</button>
+                                    <button href="track.devriko.com/etiqueta/cen" class="btn-block btn btn-primary">Etiquetas Centros</button>
                                 </div>
                             </div>
                     @else
