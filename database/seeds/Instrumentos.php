@@ -228,8 +228,67 @@ class Instrumentos extends Seeder
             ]);
         }
 
+        $inst = array(
+            0 => array('PCDEP'),
+            1 => array('PCDEP'),
+            2 => array('PCDEP'),
+            3 => array('PCDEB'),
+            4 => array('PCDEB'),
+            5 => array('CCEM EDUCACIÓN FÍSICA'),
+            6 => array('CDDHGCS'),
+            7 => array('CCEP'),
+            8 => array('CCEP'),
+            9 => array('CCEB'),
+            10 => array('CCEB'),
+            11 => array('CCEM'),
+            12 => array('CPGEB'),
+            13 => array('CPGEB'),
+            14 => array('CPGEB'),
+            15 => array('CCEE'),
+            16 => array('CCEE'),
+            17 => array('CCEE'),
+            18 => array('CPGEP'),
+            19 => array('CPGEP'),
+            20 => array('CPGEP'),
+            21 => array('CPGEE'),
+            22 => array('CPGEE'),
+            23 => array('CPGEE'),
+            24 => array('CPGEE'),
+            25 => array('CGEE'),
+            26 => array('CGEE'),
+            27 => array('CGEE'),
+            28 => array('CGEE'),
+            29 => array('CGEE'),
+            30 => array('CDDEF'),
+            31 => array('PCDEP'),
+            32 => array('PCDEP'),
+            33 => array('CCEP'),
+            34 => array('CCEP'),
+            35 => array('CDDMU'),
+            36 => array('CDDF'),
+            37 => array('CCEM MÚSICA'),
+            38 => array('CCEM HISTORIA'),
+            39 => array('CCEM BIOLOGÍA'),
+            40 => array('CCEM MATEMÁTICAS'),
+            41 => array('INSUMOS DE MATEMÁTICAS'),
+            42 => array('CCEB'),
+            43 => array('CCEB'),
+            44 => array('CCEM FÍSICA'),
+            45 => array('CDDAV'),
+            46 => array('CCEM ARTES VISUALES'),
+            47 => array('INSUMOS DE QUÍMICA'),
+            48 => array('CCEM QUÍMICA'),
+            49 => array('CCEM LENGUAJE'),
+            50 => array('CDDB'),
+            51 => array('CPGEM'),
+            52 => array('CDDI'),
+        );
 
-
+        foreach($inst as $dat){
+            DB::table('items')->insert([
+                'description' => $dat[0]
+            ]);
+        }
 
 
     }
