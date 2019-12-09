@@ -224,7 +224,7 @@ class Instrumentos extends Seeder
 
         foreach($data as $dat){
             DB::table('laboratorios')->insert([
-                'nombre_lab' => $dat
+                'nombre_lab' => $dat[0]
             ]);
         }
 
