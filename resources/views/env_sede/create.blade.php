@@ -11,7 +11,7 @@
                     <select name="sede" class="form-control">
                         @foreach($sede as $sedes)
                             @foreach($enviado as $env)
-                                @if($sedes->id_users != $env->id_sede)
+                                @if($sedes->id_sede != $env->id_sede)
                                     <option value="{{$sedes->id_sede}}">{{$sedes->nombre_sede}}</option>
                                 @endif
                             @endforeach
