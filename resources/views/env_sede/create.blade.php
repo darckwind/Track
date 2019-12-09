@@ -9,17 +9,11 @@
                 <div class="col-md-6">
                     <label for="exampleInputEmail1">Sede</label>
                     <select name="sede" class="form-control">
-                        @if(Auth::user()->id_tipo!=3)
-                            @foreach($sede as $sedes)
-                                @if($sedes->id_users == Auth::user()->id)
-                                    <option value="{{$sedes->id_sede}}">{{$sedes->nombre_sede}}</option>
-                                @endif
-                            @endforeach
-                        @else
-                            @foreach($sede as $sedes)
+                        @foreach($sede as $sedes)
+                            @if($sedes->id_users != $env->id_sede)
                                 <option value="{{$sedes->id_sede}}">{{$sedes->nombre_sede}}</option>
-                            @endforeach
-                        @endif
+                            @endif
+                        @endforeach
                     </select>
                 </div>
                 <div class="col-md-6">
