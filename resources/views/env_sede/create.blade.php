@@ -2,8 +2,6 @@
 
 @section('content')
 
-    {{$enviado}}
-    {{$sede}}
     <div class="container">
         <form action="{{ route('envsede.store') }}" method="POST">
             @csrf
@@ -12,11 +10,7 @@
                     <label for="exampleInputEmail1">Sede</label>
                     <select name="sede" class="form-control">
                         @foreach($sede as $sedes)
-                            @foreach($enviado as $env)
-                                @if($sedes->id_sede != $env->id_sede)
-                                    <option value="{{$sedes->id_sede}}">{{$sedes->nombre_sede}}</option>
-                                @endif
-                            @endforeach
+                            <option value="{{$sedes->id_sede}}">{{$sedes->nombre_sede}}</option>
                         @endforeach
                     </select>
                 </div>
