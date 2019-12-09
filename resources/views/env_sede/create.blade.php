@@ -2,6 +2,8 @@
 
 @section('content')
 
+    {{$enviado}}
+    {{$sede}}
     <div class="container">
         <form action="{{ route('envsede.store') }}" method="POST">
             @csrf
