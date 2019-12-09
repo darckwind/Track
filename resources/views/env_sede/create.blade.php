@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    {{$enviado}}
     <div class="container">
         <form action="{{ route('envsede.store') }}" method="POST">
             @csrf
