@@ -17,8 +17,9 @@
                 </div>
                 <div class="col-md-6">
                     <label for="exampleInputEmail1">Laboratorio</label>
-                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Busqueda" class="col-sm-3 filter-table">
+
                     <select name="lab" class="form-control">
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Busqueda" class="col-sm-3 filter-table">
                         @foreach($lab as $labs)
                             <option value="{{$labs->id_laboratorio}}">{{$labs->nombre_lab}}</option>
                         @endforeach

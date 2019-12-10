@@ -21,8 +21,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/env_sede/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="35" column="52" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="52" />
+            <state relative-caret-position="407">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="e#1347#2148#0#HTML" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/env_lab/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="60" selection-end-column="13" />
+              <folding>
+                <element signature="e#1469#2270#0#HTML" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,7 +71,6 @@
         <option value="$PROJECT_DIR$/database/seeds/Estado.php" />
         <option value="$PROJECT_DIR$/resources/views/item/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/lab/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/env_lab/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/env_lab/index.blade.php" />
         <option value="$PROJECT_DIR$/app/envio_lab.php" />
         <option value="$PROJECT_DIR$/resources/views/env_lab/edit.blade.php" />
@@ -101,6 +115,7 @@
         <option value="$PROJECT_DIR$/database/seeds/Sedes.php" />
         <option value="$PROJECT_DIR$/database/seeds/Instrumentos.php" />
         <option value="$PROJECT_DIR$/resources/views/etiqueta/sede.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/env_lab/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/env_sede/create.blade.php" />
       </list>
     </option>
@@ -263,7 +278,7 @@
               <item name="Track" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="env_sede" type="462c0819:PsiDirectoryNode" />
+              <item name="env_lab" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Track" type="b2602c69:ProjectViewProjectNode" />
@@ -330,21 +345,7 @@
       <workItem from="1574946969666" duration="30467000" />
       <workItem from="1575323724834" duration="9359000" />
       <workItem from="1575462560447" duration="31845000" />
-      <workItem from="1575907063777" duration="7454000" />
-    </task>
-    <task id="LOCAL-00290" summary="redireccion a home">
-      <created>1575699621910</created>
-      <option name="number" value="00290" />
-      <option name="presentableId" value="LOCAL-00290" />
-      <option name="project" value="LOCAL" />
-      <updated>1575699621910</updated>
-    </task>
-    <task id="LOCAL-00291" summary="redireccion a home">
-      <created>1575699674986</created>
-      <option name="number" value="00291" />
-      <option name="presentableId" value="LOCAL-00291" />
-      <option name="project" value="LOCAL" />
-      <updated>1575699674986</updated>
+      <workItem from="1575907063777" duration="7719000" />
     </task>
     <task id="LOCAL-00292" summary="redireccion a home">
       <created>1575699858329</created>
@@ -675,17 +676,31 @@
       <option name="project" value="LOCAL" />
       <updated>1576004054231</updated>
     </task>
-    <option name="localTasksCounter" value="339" />
+    <task id="LOCAL-00339" summary="redireccion a home">
+      <created>1576006787548</created>
+      <option name="number" value="00339" />
+      <option name="presentableId" value="LOCAL-00339" />
+      <option name="project" value="LOCAL" />
+      <updated>1576006787548</updated>
+    </task>
+    <task id="LOCAL-00340" summary="redireccion a home">
+      <created>1576006852150</created>
+      <option name="number" value="00340" />
+      <option name="presentableId" value="LOCAL-00340" />
+      <option name="project" value="LOCAL" />
+      <updated>1576006852150</updated>
+    </task>
+    <option name="localTasksCounter" value="341" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95146000" />
+    <option name="totallyTimeSpent" value="95411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4955595" visible="true" weight="0.22051696" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4955595" visible="true" weight="0.22051696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.5044405" side_tool="true" weight="0.23263328" />
@@ -701,7 +716,7 @@
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32924962" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.32924962" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32924962" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.3178082" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.3178082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -738,13 +753,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="redireccion a home" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_172403_create_envio_sedes_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/env_lab/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1112,10 +1120,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/env_lab/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="60" selection-end-column="13" />
+          <folding>
+            <element signature="e#1469#2270#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/env_sede/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="35" column="52" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="52" />
+        <state relative-caret-position="407">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#1347#2148#0#HTML" />
+          </folding>
         </state>
       </provider>
     </entry>
