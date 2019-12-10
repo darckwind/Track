@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dff3ce6b-8c27-4a51-8d7f-5b227e82bec1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/etiqueta/sede.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/etiqueta/sede.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/env_sede/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/env_sede/create.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,10 +19,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/etiqueta/sede.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/env_sede/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+            <state relative-caret-position="181">
+              <caret line="35" column="52" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -99,10 +98,10 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EnvioSedeController.php" />
-        <option value="$PROJECT_DIR$/resources/views/env_sede/create.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/Sedes.php" />
         <option value="$PROJECT_DIR$/database/seeds/Instrumentos.php" />
         <option value="$PROJECT_DIR$/resources/views/etiqueta/sede.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/env_sede/create.blade.php" />
       </list>
     </option>
   </component>
@@ -264,7 +263,7 @@
               <item name="Track" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="etiqueta" type="462c0819:PsiDirectoryNode" />
+              <item name="env_sede" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Track" type="b2602c69:ProjectViewProjectNode" />
@@ -331,14 +330,7 @@
       <workItem from="1574946969666" duration="30467000" />
       <workItem from="1575323724834" duration="9359000" />
       <workItem from="1575462560447" duration="31845000" />
-      <workItem from="1575907063777" duration="6826000" />
-    </task>
-    <task id="LOCAL-00289" summary="redireccion a home">
-      <created>1575699577747</created>
-      <option name="number" value="00289" />
-      <option name="presentableId" value="LOCAL-00289" />
-      <option name="project" value="LOCAL" />
-      <updated>1575699577747</updated>
+      <workItem from="1575907063777" duration="7454000" />
     </task>
     <task id="LOCAL-00290" summary="redireccion a home">
       <created>1575699621910</created>
@@ -676,11 +668,18 @@
       <option name="project" value="LOCAL" />
       <updated>1575996660565</updated>
     </task>
-    <option name="localTasksCounter" value="338" />
+    <task id="LOCAL-00338" summary="redireccion a home">
+      <created>1576004054231</created>
+      <option name="number" value="00338" />
+      <option name="presentableId" value="LOCAL-00338" />
+      <option name="project" value="LOCAL" />
+      <updated>1576004054231</updated>
+    </task>
+    <option name="localTasksCounter" value="339" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94518000" />
+    <option name="totallyTimeSpent" value="95146000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -702,7 +701,7 @@
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32924962" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.32924962" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32924962" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.056164384" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.3178082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1041,13 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/env_sede/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_26_155103_create_laboratorios_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1115,8 +1107,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/etiqueta/sede.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        <state relative-caret-position="290">
+          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/env_sede/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="35" column="52" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="52" />
         </state>
       </provider>
     </entry>
