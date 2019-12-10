@@ -40,13 +40,11 @@
             </table>
             <table class="table">
                 <tr>
-                    <th>Sede</th>
                     <th>Laboratorios</th>
                 </tr>
                 @foreach($lab as $labs)
                     @if($labs->id_sede == $sedes->id_sede)
                         <tr>
-                            <td>{{$labs->nombre_sede}}</td>
                             <td>{{$labs->nombre_lab}}</td>
                         </tr>
                     @endif
